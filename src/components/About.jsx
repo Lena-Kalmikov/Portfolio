@@ -33,7 +33,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
               }
             >
-              I'm <span className="text-primary">Simone Olivia,</span> a Web
+              I'm <span className="text-primary">Lena Kalmikov,</span> a Web
               Developer
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
@@ -59,11 +59,13 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 }
               >
                 <li>
-                  <span className="fw-600 me-2">Name:</span>Simone Olivia
+                  <span className="fw-600 me-2">Name:</span>Lena Kalmikov
                 </li>
                 <li>
                   <span className="fw-600 me-2">Email:</span>
-                  <a href="mailto:chat@simone.com">chat@simone.com</a>
+                  <a href="mailto:elenakalmikov@gmail.com">
+                    elenakalmikov@gmail.com
+                  </a>
                 </li>
                 <li>
                   <span className="fw-600 me-2">Age:</span>28

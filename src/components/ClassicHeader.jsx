@@ -44,14 +44,14 @@ const ClassicHeader = ({ handleNavClick }) => {
               style={{ cursor: "pointer" }}
               className="logo"
               to="home"
-              title="Simone"
+              title="Lena"
               onClick={(e) => {
                 e.preventDefault();
                 setIsNavModalClose(true);
               }}
             >
               {" "}
-              <img src="images/logo-light.png" alt="Simone" />{" "}
+              <img src="images/logo-light.png" alt="Lena" />{" "}
             </Link>
             {/* Logo End */}
           </div>

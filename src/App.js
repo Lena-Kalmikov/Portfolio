@@ -25,10 +25,11 @@ function App() {
   };
 
   const [scrollTopVisible, setScrollTopVisible] = useState(false);
-  const [isLoading, setisLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     const loadingTimeout = setTimeout(() => {
-      setisLoading(false);
+      setIsLoading(false);
     }, 1000);
     return () => {
       clearTimeout(loadingTimeout);
