@@ -2,8 +2,20 @@ import React, { useState } from "react";
 import { Tooltip } from "./Tooltip";
 import { Link } from "react-scroll";
 
+import github from "../images/github.png";
+import linkedin from "../images/linkedin.png";
+import whatsapp from "../images/whatsapp.png";
+import githubOnHover from "../images/github_original.png";
+import linkedinOnHover from "../images/linkedin_original.png";
+import whatsappOnHover from "../images/whatsapp_original.png";
+
 const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
   const [isNavModalClose, setIsNavModalClose] = useState(true);
+
+  const [githubIcon, setGithubIcon] = useState(github);
+  const [linkedinIcon, setLinkedinIcon] = useState(linkedin);
+  const [whatsappIcon, setWhatsappIcon] = useState(whatsapp);
+
   return (
     <header id="header" className="sticky-top">
       {/* Navbar */}
@@ -165,48 +177,55 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
               </li>
             </ul>
           </div>
-          <ul className="social-icons social-icons-muted social-icons-sm mt-lg-auto ms-auto ms-lg-0 d-flex">
-            <li className="social-icons-facebook">
-              <Tooltip text="Facebook" placement="top">
+          <ul className="social-icons social-icons-muted social-icons-sm mt-lg-auto mb-lg-3 ms-auto ms-lg-0 d-flex">
+            <li className="social-icons-linkedin">
+              <Tooltip text="Linkedin" placement="top">
                 <a
-                  href="http://www.facebook.com/"
+                  href="https://www.linkedin.com/in/lena-kalmikov/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-facebook-f" />
-                </a>
-              </Tooltip>
-            </li>
-            <li className="social-icons-twitter">
-              <Tooltip text="Twitter" placement="top">
-                <a
-                  href="http://www.twitter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-twitter" />
-                </a>
-              </Tooltip>
-            </li>
-            <li className="social-icons-dribbble">
-              <Tooltip text="Dribbble" placement="top">
-                <a
-                  href="http://www.dribbble.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-dribbble" />
+                  <img
+                    src={linkedinIcon}
+                    alt="linkedin"
+                    width={"28px"}
+                    onMouseOver={() => setLinkedinIcon(linkedinOnHover)}
+                    onMouseOut={() => setLinkedinIcon(linkedin)}
+                  />
                 </a>
               </Tooltip>
             </li>
             <li className="social-icons-github">
-              <Tooltip text="Google" placement="top">
+              <Tooltip text="Github" placement="top">
                 <a
-                  href="http://www.google.com/"
+                  href="https://github.com/Lena-Kalmikov"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-github" />
+                  <img
+                    src={githubIcon}
+                    alt="github"
+                    width={"28px"}
+                    onMouseOver={() => setGithubIcon(githubOnHover)}
+                    onMouseOut={() => setGithubIcon(github)}
+                  />
+                </a>
+              </Tooltip>
+            </li>
+            <li className="social-icons-github">
+              <Tooltip text="Whatsapp" placement="top">
+                <a
+                  href="https://wa.me/972527979366"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={whatsappIcon}
+                    alt="whatsapp"
+                    width={"28px"}
+                    onMouseOver={() => setWhatsappIcon(whatsappOnHover)}
+                    onMouseOut={() => setWhatsappIcon(whatsapp)}
+                  />
                 </a>
               </Tooltip>
             </li>

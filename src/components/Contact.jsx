@@ -2,12 +2,23 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 
+import github from "../images/github.png";
+import linkedin from "../images/linkedin.png";
+import whatsapp from "../images/whatsapp.png";
+import githubOnHover from "../images/github_original.png";
+import linkedinOnHover from "../images/linkedin_original.png";
+import whatsappOnHover from "../images/whatsapp_original.png";
+
 import "react-toastify/dist/ReactToastify.css";
 import { Tooltip } from "./Tooltip";
 
 const Contact = ({ classicHeader, darkTheme }) => {
   const form = useRef();
   const [sendingMail, setSendingMail] = useState(false);
+
+  const [githubIcon, setGithubIcon] = useState(github);
+  const [linkedinIcon, setLinkedinIcon] = useState(linkedin);
+  const [whatsappIcon, setWhatsappIcon] = useState(whatsapp);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -88,102 +99,79 @@ const Contact = ({ classicHeader, darkTheme }) => {
                 "mb-3 text-5 text-uppercase " + (darkTheme ? "text-white" : "")
               }
             >
-              Address
+              Contact Me
             </h2>
-            <p className={"text-3 mb-4 " + (darkTheme ? "text-light" : "")}>
-              4th Floor, Plot No.22,
-              <br />
-              145 Murphy Canyon Rd.
-              <br />
-              San Diego CA 2028
-            </p>
-            <p className={"text-3 mb-1 " + (darkTheme ? "text-light" : "")}>
-              <span className="text-primary text-4 me-2">
-                <i className="fas fa-phone" />
-              </span>
-              (060) 444 434 444
-            </p>
-            <p className={"text-3 mb-1 " + (darkTheme ? "text-light" : "")}>
-              <span className="text-primary text-4 me-2">
-                <i className="fas fa-fax" />
-              </span>
-              (060) 555 545 555
-            </p>
-            <p className={"text-3 mb-4 " + (darkTheme ? "text-light" : "")}>
-              <span className="text-primary text-4 me-2">
-                <i className="fas fa-envelope" />
-              </span>
-              elenakalmikov@gmail.com
-            </p>
-            <h2
-              className={
-                "mb-3 text-5 text-uppercase " + (darkTheme ? "text-white" : "")
-              }
-            >
-              Follow Me
-            </h2>
+            
             <ul
               className={
                 "social-icons justify-content-center justify-content-md-start " +
                 (darkTheme ? "social-icons-muted" : "")
               }
             >
-              <li className="social-icons-dribbble">
-                <Tooltip text="Dribbble" placement="top">
+              <li className="social-icons-linkedin me-3">
+                <Tooltip text="Linkedin" placement="top">
                   <a
-                    href="http://www.dribbble.com/harnishdesign/"
+                    href="https://www.linkedin.com/in/lena-kalmikov/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-dribbble" />
+                    <img
+                      src={linkedinIcon}
+                      alt="linkedin"
+                      width={"40px"}
+                      onMouseOver={() => setLinkedinIcon(linkedinOnHover)}
+                      onMouseOut={() => setLinkedinIcon(linkedin)}
+                    />
                   </a>
                 </Tooltip>
               </li>
-              <li className="social-icons-twitter">
-                <Tooltip text="Twitter" placement="top">
-                  <a
-                    href="https://twitter.com/harnishdesign/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-twitter" />
-                  </a>
-                </Tooltip>
-              </li>
-              <li className="social-icons-facebook">
-                <Tooltip text="Facebook" placement="top">
-                  <a
-                    href="http://www.facebook.com/harnishdesign/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                </Tooltip>
-              </li>
-              <li className="social-icons-google">
-                <Tooltip text="Google" placement="top">
-                  <a
-                    href="http://www.google.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-google" />
-                  </a>
-                </Tooltip>
-              </li>
-              <li className="social-icons-github">
+              <li className="social-icons-github me-3">
                 <Tooltip text="Github" placement="top">
                   <a
-                    href="http://www.github.com/"
+                    href="https://github.com/Lena-Kalmikov"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-github" />
+                    <img
+                      src={githubIcon}
+                      alt="github"
+                      width={"40px"}
+                      onMouseOver={() => setGithubIcon(githubOnHover)}
+                      onMouseOut={() => setGithubIcon(github)}
+                    />
+                  </a>
+                </Tooltip>
+              </li>
+              <li className="social-icons-github me-3">
+                <Tooltip text="Whatsapp" placement="top">
+                  <a
+                    href="https://wa.me/972527979366"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={whatsappIcon}
+                      alt="whatsapp"
+                      width={"40px"}
+                      onMouseOver={() => setWhatsappIcon(whatsappOnHover)}
+                      onMouseOut={() => setWhatsappIcon(whatsapp)}
+                    />
                   </a>
                 </Tooltip>
               </li>
             </ul>
+            <p className={"text-3 mt-5 mb-1 " + (darkTheme ? "text-light" : "")}>
+              <span className="text-primary text-4 me-2">
+                <i className="fas fa-phone" />
+              </span>
+              +972 52 797 9366
+            </p>
+            <p className={"text-3 mb-3 " + (darkTheme ? "text-light" : "")}>
+              <span className="text-primary text-4 me-2">
+                <i className="fas fa-envelope" />
+              </span>
+              elenakalmikov@gmail.com
+            </p>
           </div>
           {/* contact form */}
           <div className="col-md-8 col-xl-9 order-0 order-md-1">
@@ -193,7 +181,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
                 (darkTheme ? "text-white" : "")
               }
             >
-              Send us a note
+              Send me an email
             </h2>
             <form
               className={darkTheme ? "form-dark" : ""}
@@ -228,7 +216,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
                     className="form-control"
                     rows={5}
                     required
-                    placeholder="Tell us more about your needs........"
+                    placeholder="Write your message here."
                     defaultValue={""}
                   />
                 </div>
@@ -246,7 +234,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
                         aria-hidden="true"
                         class="spinner-border spinner-border-sm align-self-center me-2"
                       ></span>
-                      Sending.....
+                      Sending...
                     </>
                   ) : (
                     <>Send Message</>
