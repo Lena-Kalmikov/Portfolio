@@ -121,7 +121,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                     setIsNavModalClose(true);
                   }}
                 >
-                  Skills
+                  Tech Stack
                 </Link>
               </li>
               <li className="nav-item">

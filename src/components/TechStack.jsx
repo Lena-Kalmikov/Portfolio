@@ -42,7 +42,7 @@ const TechStack = ({ classicHeader, darkTheme }) => {
           >
             Tech Stack
           </h2>
-          <p
+          {/* <p
             className={
               "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
               (darkTheme ? "text-white" : "text-dark")
@@ -51,7 +51,7 @@ const TechStack = ({ classicHeader, darkTheme }) => {
             {" "}
             Skills
             <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
-          </p>
+          </p> */}
         </div>
         <div className="row gx-5">
           <div className="col-md-6">
@@ -61,13 +61,9 @@ const TechStack = ({ classicHeader, darkTheme }) => {
                 (darkTheme ? "bg-dark" : "bg-white border")
               }
             >
-              <p className="badge bg-primary text-2 fw-400">2016 - Present</p>
               <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
-                Project Manager
+                Front-End
               </h3>
-              <p className={darkTheme ? "text-primary" : "text-danger"}>
-                Baguette Translations
-              </p>
               <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
                 <ul
                   className={
@@ -115,11 +111,11 @@ const TechStack = ({ classicHeader, darkTheme }) => {
                       <img src={sass} alt="sass" width={"80px"} />
                     </Tooltip>
                   </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  {/* <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Redux" placement="bottom">
                       <img src={redux} alt="redux" width={"80px"} />
                     </Tooltip>
-                  </div>
+                  </div> */}
                   <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Type Script" placement="bottom">
                       <img src={ts} alt="type script" width={"80px"} />
@@ -133,54 +129,35 @@ const TechStack = ({ classicHeader, darkTheme }) => {
                 </ul>
               </p>
             </div>
-          </div>
-
-          <div className="col-md-6">
             <div
               className={
                 "bg-white  rounded p-4 mb-4 " +
                 (darkTheme ? "bg-dark" : "bg-white border")
               }
             >
-              <p className="badge bg-primary text-2 fw-400">2016 - Present</p>
               <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
-                Project Manager
+                Back-End
               </h3>
-              <p className={darkTheme ? "text-primary" : "text-danger"}>
-                Baguette Translations
-              </p>
+
               <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
                 <ul
                   className={
                     "social-icons justify-content-center justify-content-md-start"
                   }
                 >
-                  <div className="social-icons">
+                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Node JS" placement="bottom">
-                      <div>
-                        <img src={nodejs} alt="nodejs" width={"90px"} />
-                      </div>
+                      <img src={nodejs} alt="nodejs" width={"80"} />
                     </Tooltip>
                   </div>
-                  <div className="social-icons">
+                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Express JS" placement="bottom">
-                      <div>
-                        <img src={express} alt="express" width={"90px"} />
-                      </div>
+                      <img src={express} alt="express" width={"80px"} />
                     </Tooltip>
                   </div>
-                  <div className="social-icons">
+                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="C#" placement="bottom">
-                      <div>
-                        <img src={csharp} alt="c-sharp" width={"90px"} />
-                      </div>
-                    </Tooltip>
-                  </div>
-                  <div className="social-icons">
-                    <Tooltip text="Postman" placement="bottom">
-                      <div>
-                        <img src={postman} alt="postman" width={"90px"} />
-                      </div>
+                      <img src={csharp} alt="c-sharp" width={"80px"} />
                     </Tooltip>
                   </div>
                 </ul>
@@ -195,106 +172,81 @@ const TechStack = ({ classicHeader, darkTheme }) => {
                 (darkTheme ? "bg-dark" : "bg-white border")
               }
             >
-              <p className="badge bg-primary text-2 fw-400">2016 - Present</p>
               <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
-                Project Manager
+                DBs and Cloud
               </h3>
-              <p className={darkTheme ? "text-primary" : "text-danger"}>
-                Baguette Translations
-              </p>
               <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
                 <ul
                   className={
                     "social-icons justify-content-center justify-content-md-start"
                   }
                 >
-                  <div className="social-icons">
+                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Firebase" placement="bottom">
-                      <div>
-                        <img src={firebase} alt="firebase" width={"90px"} />
-                      </div>
+                      <img src={firebase} alt="firebase" width={"80px"} />
                     </Tooltip>
                   </div>
-                  <div className="social-icons">
-                    <Tooltip text="Mongodb" placement="bottom">
-                      <div>
-                        <img src={mongodb} alt="mongodb" width={"90px"} />
-                      </div>
+                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                    <Tooltip text="MongoDB" placement="bottom">
+                      <img src={mongodb} alt="mongodb" width={"80px"} />
                     </Tooltip>
                   </div>
-                  <div className="social-icons">
+                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="MySQL" placement="bottom">
-                      <div>
-                        <img src={mysql} alt="mysql" width={"90px"} />
-                      </div>
+                      <img src={mysql} alt="mysql" width={"80px"} />
                     </Tooltip>
                   </div>
-                  <div className="social-icons">
+                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Heroku" placement="bottom">
-                      <div>
-                        <img src={heroku} alt="heroku" width={"90px"} />
-                      </div>
+                      <img src={heroku} alt="heroku" width={"80px"} />
                     </Tooltip>
                   </div>
-
-                  <div className="social-icons">
+                  {/* <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Azure" placement="bottom">
-                      <div>
-                        <img src={azure} alt="azure" width={"90px"} />
-                      </div>
+                      <img src={azure} alt="azure" width={"80px"} />
                     </Tooltip>
-                  </div>
+                  </div> */}
                 </ul>
               </p>
             </div>
-          </div>
-
-          <div className="col-md-6">
             <div
               className={
                 "bg-white  rounded p-4 mb-4 " +
                 (darkTheme ? "bg-dark" : "bg-white border")
               }
             >
-              <p className="badge bg-primary text-2 fw-400">2016 - Present</p>
               <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
-                Project Manager
+                More
               </h3>
-              <p className={darkTheme ? "text-primary" : "text-danger"}>
-                Baguette Translations
-              </p>
               <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
                 <ul
                   className={
                     "social-icons justify-content-center justify-content-md-start"
                   }
                 >
-                  <div className="social-icons">
+                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="github" placement="bottom">
-                      <div>
-                        <img src={github} alt="github" width={"90px"} />
-                      </div>
+                      <img src={github} alt="github" width={"80px"} />
                     </Tooltip>
                   </div>
-                  <div className="social-icons">
+                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="git" placement="bottom">
-                      <div>
-                        <img src={git} alt="git" width={"90px"} />
-                      </div>
+                      <img src={git} alt="git" width={"80px"} />
                     </Tooltip>
                   </div>
-                  <div className="social-icons">
+                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Visual Studio" placement="bottom">
-                      <div>
-                        <img src={vs} alt="vs" width={"90px"} />
-                      </div>
+                      <img src={vs} alt="vs" width={"80px"} />
                     </Tooltip>
                   </div>
-                  <div className="social-icons">
+                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                    <Tooltip text="Postman" placement="bottom">
+                      <img src={postman} alt="postman" width={"80px"} />
+                    </Tooltip>
+                  </div>
+                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Figma" placement="bottom">
-                      <div>
-                        <img src={figma} alt="figma" width={"90px"} />
-                      </div>
+                      <img src={figma} alt="figma" width={"80px"} />
                     </Tooltip>
                   </div>
                 </ul>
