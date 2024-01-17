@@ -205,9 +205,8 @@ const ClassicHeader = ({ handleNavClick }) => {
           </div>
           <div className="col-auto col-lg-2 d-flex justify-content-end">
             <ul className="social-icons social-icons-light">
-              
               <li className="social-icons-facebook">
-                <Tooltip text="Facebook" placement="top">
+                <Tooltip text="Facebook" placement="bottom">
                   <a
                     href="http://www.facebook.com/"
                     target="_blank"
@@ -218,7 +217,7 @@ const ClassicHeader = ({ handleNavClick }) => {
                 </Tooltip>
               </li>
               <li className="social-icons-dribbble">
-                <Tooltip text="Dribbble" placement="top">
+                <Tooltip text="Dribbble" placement="bottom">
                   <a
                     href="http://www.dribbble.com/"
                     target="_blank"

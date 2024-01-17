@@ -15,6 +15,7 @@ import TermsAndConditions from "./components/TermsAndConditions";
 import Disclaimer from "./components/Disclaimer";
 import PreLoader from "./components/Preloader";
 import { Tooltip } from "./components/Tooltip";
+import TechStack from "./components/TechStack";
 
 function App() {
   const classicHeader = commonConfig.classicHeader;
@@ -80,22 +81,22 @@ function App() {
               classicHeader={classicHeader}
               darkTheme={darkTheme}
             ></AboutUs>
-            <Services
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></Services>
             <Resume
               classicHeader={classicHeader}
               darkTheme={darkTheme}
-            ></Resume>
+            ></Resume>{" "}
+            <TechStack
+              classicHeader={classicHeader}
+              darkTheme={darkTheme}
+            ></TechStack>
             <Portfolio
               classicHeader={classicHeader}
               darkTheme={darkTheme}
             ></Portfolio>
-            <Testimonials
+            {/* <Testimonials
               classicHeader={classicHeader}
               darkTheme={darkTheme}
-            ></Testimonials>
+            ></Testimonials> */}
             <Contact
               classicHeader={classicHeader}
               darkTheme={darkTheme}

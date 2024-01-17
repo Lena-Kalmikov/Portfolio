@@ -66,7 +66,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
   return (
     <section
       id="contact"
-      className={"section " + (darkTheme ? "bg-dark-2" : "bg-light")}
+      className={"section " + (darkTheme ? "bg-dark-1" : "bg-light")}
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
@@ -101,15 +101,15 @@ const Contact = ({ classicHeader, darkTheme }) => {
             >
               Contact Me
             </h2>
-            
+
             <ul
               className={
                 "social-icons justify-content-center justify-content-md-start " +
                 (darkTheme ? "social-icons-muted" : "")
               }
             >
-              <li className="social-icons-linkedin me-3">
-                <Tooltip text="Linkedin" placement="top">
+              <div className="social-icons-linkedin">
+                <Tooltip text="Linkedin" placement="bottom">
                   <a
                     href="https://www.linkedin.com/in/lena-kalmikov/"
                     target="_blank"
@@ -118,15 +118,15 @@ const Contact = ({ classicHeader, darkTheme }) => {
                     <img
                       src={linkedinIcon}
                       alt="linkedin"
-                      width={"40px"}
+                      width={"42px"}
                       onMouseOver={() => setLinkedinIcon(linkedinOnHover)}
                       onMouseOut={() => setLinkedinIcon(linkedin)}
                     />
                   </a>
                 </Tooltip>
-              </li>
-              <li className="social-icons-github me-3">
-                <Tooltip text="Github" placement="top">
+              </div>
+              <div className="social-icons-github ms-2 me-2">
+                <Tooltip text="Github" placement="bottom">
                   <a
                     href="https://github.com/Lena-Kalmikov"
                     target="_blank"
@@ -135,15 +135,15 @@ const Contact = ({ classicHeader, darkTheme }) => {
                     <img
                       src={githubIcon}
                       alt="github"
-                      width={"40px"}
+                      width={"42px"}
                       onMouseOver={() => setGithubIcon(githubOnHover)}
                       onMouseOut={() => setGithubIcon(github)}
                     />
                   </a>
                 </Tooltip>
-              </li>
-              <li className="social-icons-github me-3">
-                <Tooltip text="Whatsapp" placement="top">
+              </div>
+              <div className="social-icons-whatsapp">
+                <Tooltip text="Whatsapp" placement="bottom">
                   <a
                     href="https://wa.me/972527979366"
                     target="_blank"
@@ -152,15 +152,17 @@ const Contact = ({ classicHeader, darkTheme }) => {
                     <img
                       src={whatsappIcon}
                       alt="whatsapp"
-                      width={"40px"}
+                      width={"42px"}
                       onMouseOver={() => setWhatsappIcon(whatsappOnHover)}
                       onMouseOut={() => setWhatsappIcon(whatsapp)}
                     />
                   </a>
                 </Tooltip>
-              </li>
+              </div>
             </ul>
-            <p className={"text-3 mt-5 mb-1 " + (darkTheme ? "text-light" : "")}>
+            <p
+              className={"text-3 mt-5 mb-1 " + (darkTheme ? "text-light" : "")}
+            >
               <span className="text-primary text-4 me-2">
                 <i className="fas fa-phone" />
               </span>

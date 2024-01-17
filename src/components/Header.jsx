@@ -98,13 +98,13 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                   style={{ cursor: "pointer" }}
                   activeClass="active"
                   spy
-                  to="services"
+                  to="resume"
                   onClick={(e) => {
                     e.preventDefault();
                     setIsNavModalClose(true);
                   }}
                 >
-                  What I Do
+                  Resume
                 </Link>
               </li>
               <li className="nav-item">
@@ -115,13 +115,13 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                   style={{ cursor: "pointer" }}
                   activeClass="active"
                   spy
-                  to="resume"
+                  to="techStack"
                   onClick={(e) => {
                     e.preventDefault();
                     setIsNavModalClose(true);
                   }}
                 >
-                  Resume
+                  Skills
                 </Link>
               </li>
               <li className="nav-item">
@@ -141,7 +141,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                   Portfolio
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   className="nav-link "
                   smooth
@@ -157,7 +157,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                 >
                   Testimonial
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link
                   className="nav-link "
@@ -172,14 +172,14 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                     setIsNavModalClose(true);
                   }}
                 >
-                  Contact
+                  Contact Me
                 </Link>
               </li>
             </ul>
           </div>
-          <ul className="social-icons social-icons-muted social-icons-sm mt-lg-auto mb-lg-3 ms-auto ms-lg-0 d-flex">
+          <ul className="social-icons social-icons-muted social-icons-sm mt-lg-auto mb-lg-4 ms-auto me-sm-4 ms-lg-0 d-flex">
             <li className="social-icons-linkedin">
-              <Tooltip text="Linkedin" placement="top">
+              <Tooltip text="Linkedin" placement="bottom">
                 <a
                   href="https://www.linkedin.com/in/lena-kalmikov/"
                   target="_blank"
@@ -196,7 +196,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
               </Tooltip>
             </li>
             <li className="social-icons-github">
-              <Tooltip text="Github" placement="top">
+              <Tooltip text="Github" placement="bottom">
                 <a
                   href="https://github.com/Lena-Kalmikov"
                   target="_blank"
@@ -213,7 +213,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
               </Tooltip>
             </li>
             <li className="social-icons-github">
-              <Tooltip text="Whatsapp" placement="top">
+              <Tooltip text="Whatsapp" placement="bottom">
                 <a
                   href="https://wa.me/972527979366"
                   target="_blank"

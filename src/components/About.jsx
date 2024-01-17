@@ -14,7 +14,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
           >
             About Me
           </h2>
-          <p
+          {/* <p
             className={
               "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
               (darkTheme ? "text-white" : "text-dark")
@@ -22,7 +22,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
           >
             Know Me More
             <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
-          </p>
+          </p> */}
         </div>
         {/* Heading end*/}
         <div className="row gy-5">
@@ -67,12 +67,11 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                     elenakalmikov@gmail.com
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <span className="fw-600 me-2">Age:</span>28
-                </li>
+                </li> */}
                 <li className="border-0">
-                  <span className="fw-600 me-2">From:</span>Los Angeles,
-                  California
+                  <span className="fw-600 me-2">From:</span>Ramat-Gan, Israel
                 </li>
               </ul>
               <a
@@ -93,7 +92,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
             (darkTheme ? "separator-border-light" : "")
           }
         >
-          <div className="row">
+          {/* <div className="row">
             <div className="col-6 col-md-3">
               <div className="featured-box text-center">
                 <h4
@@ -154,8 +153,8 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
+          </div>*/}
+        </div> 
         {/* projects rewards counting end */}
       </div>
     </section>
