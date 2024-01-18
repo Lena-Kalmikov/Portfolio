@@ -16,7 +16,7 @@ import firebase from "../images/techStack/firebase.png";
 import git from "../images/techStack/git.png";
 import github from "../images/techStack/github.png";
 import heroku from "../images/techStack/heroku.png";
-import mysql from "../images/techStack/mysql.png";
+import sql from "../images/techStack/sql.png";
 import csharp from "../images/techStack/csharp.png";
 import ts from "../images/techStack/typescript.png";
 import postman from "../images/techStack/postman.png";
@@ -25,6 +25,8 @@ import azure from "../images/techStack/azure.png";
 import angular from "../images/techStack/angular.png";
 import vs from "../images/techStack/vs.png";
 import express from "../images/techStack/express.png";
+import net from "../images/techStack/net.png";
+import socketio from "../images/techStack/socketio.png";
 
 const TechStack = ({ classicHeader, darkTheme }) => {
   return (
@@ -156,8 +158,18 @@ const TechStack = ({ classicHeader, darkTheme }) => {
                     </Tooltip>
                   </div>
                   <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                    <Tooltip text="Socket.IO" placement="bottom">
+                      <img src={socketio} alt="socket.io" width={"80px"} />
+                    </Tooltip>
+                  </div>
+                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="C#" placement="bottom">
                       <img src={csharp} alt="c-sharp" width={"80px"} />
+                    </Tooltip>
+                  </div>
+                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                    <Tooltip text=".NET" placement="bottom">
+                      <img src={net} alt=".net" width={"80px"} />
                     </Tooltip>
                   </div>
                 </ul>
@@ -192,8 +204,8 @@ const TechStack = ({ classicHeader, darkTheme }) => {
                     </Tooltip>
                   </div>
                   <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
-                    <Tooltip text="MySQL" placement="bottom">
-                      <img src={mysql} alt="mysql" width={"80px"} />
+                    <Tooltip text="SQL" placement="bottom">
+                      <img src={sql} alt="sql" width={"80px"} />
                     </Tooltip>
                   </div>
                   <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
@@ -234,11 +246,11 @@ const TechStack = ({ classicHeader, darkTheme }) => {
                       <img src={git} alt="git" width={"80px"} />
                     </Tooltip>
                   </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  {/* <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Visual Studio" placement="bottom">
                       <img src={vs} alt="vs" width={"80px"} />
                     </Tooltip>
-                  </div>
+                  </div> */}
                   <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Postman" placement="bottom">
                       <img src={postman} alt="postman" width={"80px"} />

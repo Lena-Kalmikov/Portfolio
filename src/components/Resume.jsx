@@ -7,32 +7,32 @@ const Resume = ({ classicHeader, darkTheme }) => {
       yearRange: "2021 - 2022",
       title: "Full-Stack Development Bootcamp",
       place: "Sela College",
-      desc: "A year long program that covered essential concepts such as Object-Oriented Programming, Data Structures, Algorithms, Complexity, and Design Patterns, various programming languages, frameworks, and databases.",
+      desc: "A year long program that covered essential concepts such as Object-Oriented Programming, Data Structures, Algorithms, Complexity, and Design Patterns. This was practiced using various programming languages (c#, js), frameworks (.net framework, asp.net core, angular), and databases (mssql, sqlite).",
     },
     {
       yearRange: "2023",
       title:
         "React - The Complete Guide (including Hooks, React Router, Redux)",
       place: "Udemy",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      desc: "Teaches React in-depth, from core basics to advanced topics, using all the latest patterns and best practices.",
     },
     {
       yearRange: "2023",
       title: "React, NodeJS, Express & MongoDB - The MERN FullStack Guide",
       place: "Udemy",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      desc: "Teaches how to build and deploy fullstack web apps with React, Node, Express, and MongoDB. Starting from the basics of each technology, and moving on to advanced concepts.",
     },
     {
       yearRange: "2023",
       title: "Design Rules: Principles + Practices for Great UI Design",
       place: "Udemy",
-      desc: "This course covered essential skills for creating visually compelling, user-friendly interfaces, that are not only aesthetically pleasing but also effective in guiding user interactions, covering topics such as hierarchy, color, contrast, typography, etc. ",
+      desc: "Teaches essential skills for creating user-friendly interfaces that are not only aesthetically pleasing but also effective in guiding user interactions.",
     },
     {
       yearRange: "2021",
       title: "Basic Python",
       place: "SheCodes",
-      desc: "My first experience with coding. This course covered the basics of Python, including variables, loops, conditions, functions, classes, objects, inheritance and more.",
+      desc: "My first encounter with programming. I learned basic concepts such as variables, loops, conditions, functions, classes, objects, inheritance and more.",
     },
   ];
 

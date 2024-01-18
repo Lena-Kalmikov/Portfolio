@@ -77,9 +77,9 @@ const Contact = ({ classicHeader, darkTheme }) => {
               (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
             }
           >
-            Contact
+            Contact ME
           </h2>
-          <p
+          {/* <p
             className={
               "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
               (darkTheme ? "text-white" : "text-dark")
@@ -88,7 +88,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
             {" "}
             Get in Touch
             <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
-          </p>
+          </p> */}
         </div>
         {/* Heading end*/}
         <div className="row gy-5">
@@ -99,9 +99,22 @@ const Contact = ({ classicHeader, darkTheme }) => {
                 "mb-3 text-5 text-uppercase " + (darkTheme ? "text-white" : "")
               }
             >
-              Contact Me
+              Get in Touch
             </h2>
-
+            <p
+              className={"text-3 mt-2 mb-1 " + (darkTheme ? "text-light" : "")}
+            >
+              <span className="text-primary text-4 me-2">
+                <i className="fas fa-phone" />
+              </span>
+              +972 52 797 9366
+            </p>
+            <p className={"text-3 mb-4 " + (darkTheme ? "text-light" : "")}>
+              <span className="text-primary text-4 me-2">
+                <i className="fas fa-envelope" />
+              </span>
+              elenakalmikov@gmail.com
+            </p>
             <ul
               className={
                 "social-icons justify-content-center justify-content-md-start " +
@@ -160,21 +173,8 @@ const Contact = ({ classicHeader, darkTheme }) => {
                 </Tooltip>
               </div>
             </ul>
-            <p
-              className={"text-3 mt-5 mb-1 " + (darkTheme ? "text-light" : "")}
-            >
-              <span className="text-primary text-4 me-2">
-                <i className="fas fa-phone" />
-              </span>
-              +972 52 797 9366
-            </p>
-            <p className={"text-3 mb-3 " + (darkTheme ? "text-light" : "")}>
-              <span className="text-primary text-4 me-2">
-                <i className="fas fa-envelope" />
-              </span>
-              elenakalmikov@gmail.com
-            </p>
           </div>
+
           {/* contact form */}
           <div className="col-md-8 col-xl-9 order-0 order-md-1">
             <h2

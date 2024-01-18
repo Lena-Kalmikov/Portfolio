@@ -241,7 +241,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
             >
               Portfolio
             </h2>
-            <p
+            {/* <p
               className={
                 "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
                 (darkTheme ? "text-white" : "text-dark")
@@ -250,7 +250,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
               {" "}
               My Work
               <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
-            </p>
+            </p> */}
           </div>
           {/* Heading end*/}
           {/* Filter Menu */}

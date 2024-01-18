@@ -33,19 +33,25 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
               }
             >
-              I'm <span className="text-primary">Lena Kalmikov,</span> a Web
-              Developer
+              I'm <span className="text-primary">Lena Kalmikov,</span> a
+              Full-Stack Developer
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-              I help you build brand for your business at an affordable price.
-              Thousands of clients have procured exceptional results while
-              working with our dedicated team. when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book.
+              I am a diligent Project Manager with 7 years of experience that
+              found a new passion in Software Development.
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
-              Delivering work within time and budget which meets client’s
-              requirements is our moto. Lorem Ipsum has been the industry's
-              standard dummy text ever when an unknown printer took a galley.
+              Reliable, organized and detail-oriented individual. A quick
+              learner, always seeking to broaden my knowledge and develop new
+              skills. Highly communicative and a team player capable of working
+              under pressure with tight deadlines. A problem solver with high
+              motivation to contribute to the success of any mission at hand.
+            </p>
+            <p className={darkTheme ? "text-white-50" : ""}>
+              Lately, I've completed a year-long program studying to be a
+              Full-Stack Developer at Sela College. These days I'm becoming
+              closely familiar with React, working on my skills and expanding my
+              knowledge further.
             </p>
           </div>
           {/* About me content end */}
@@ -154,7 +160,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
               </div>
             </div>
           </div>*/}
-        </div> 
+        </div>
         {/* projects rewards counting end */}
       </div>
     </section>
