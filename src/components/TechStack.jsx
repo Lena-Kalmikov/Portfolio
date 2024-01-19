@@ -27,8 +27,10 @@ import vs from "../images/techStack/vs.png";
 import express from "../images/techStack/express.png";
 import net from "../images/techStack/net.png";
 import socketio from "../images/techStack/socketio.png";
+import { useState } from "react";
 
 const TechStack = ({ classicHeader, darkTheme }) => {
+    const [width, setWidth] = useState("80px");
   return (
     <section
       id="techStack"
@@ -66,70 +68,77 @@ const TechStack = ({ classicHeader, darkTheme }) => {
               <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
                 Front-End
               </h3>
-              <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
+              <div className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
                 <ul
                   className={
                     "social-icons justify-content-center justify-content-md-start"
                   }
                 >
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Java Script" placement="bottom">
-                      <img src={js} alt="java script" width={"80px"} />
+                      <img
+                        src={js}
+                        alt="java script"
+                        width={"80px"}
+                        // style={{ width: width }}
+                        // onMouseEnter={() => setWidth("84px")}
+                        // onMouseLeave={() => setWidth("80px")}
+                      />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="React" placement="bottom">
                       <img src={reactjs} alt="reactjs" width={"80px"} />
                     </Tooltip>
-                  </div>
+                  </li>
 
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="react router" placement="bottom">
                       <img src={reactrouter} alt="reactrouter" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="HTML" placement="bottom">
                       <img src={html5} alt="html5" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="CSS" placement="bottom">
                       <img src={css} alt="css" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Material UI" placement="bottom">
                       <img src={materialui} alt="material-ui" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Bootstrap" placement="bottom">
                       <img src={bootstrap5} alt="bootstrap5" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="sass" placement="bottom">
                       <img src={sass} alt="sass" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  {/* <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  {/* <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Redux" placement="bottom">
                       <img src={redux} alt="redux" width={"80px"} />
                     </Tooltip>
-                  </div> */}
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li> */}
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Type Script" placement="bottom">
                       <img src={ts} alt="type script" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem" }}>
                     <Tooltip text="Angular" placement="bottom">
                       <img src={angular} alt="angular" width={"80px"} />
                     </Tooltip>
-                  </div>
+                  </li>
                 </ul>
-              </p>
+              </div>
             </div>
             <div
               className={
@@ -141,39 +150,39 @@ const TechStack = ({ classicHeader, darkTheme }) => {
                 Back-End
               </h3>
 
-              <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
+              <div className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
                 <ul
                   className={
                     "social-icons justify-content-center justify-content-md-start"
                   }
                 >
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Node JS" placement="bottom">
                       <img src={nodejs} alt="nodejs" width={"80"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Express JS" placement="bottom">
                       <img src={express} alt="express" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Socket.IO" placement="bottom">
                       <img src={socketio} alt="socket.io" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="C#" placement="bottom">
                       <img src={csharp} alt="c-sharp" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text=".NET" placement="bottom">
                       <img src={net} alt=".net" width={"80px"} />
                     </Tooltip>
-                  </div>
+                  </li>
                 </ul>
-              </p>
+              </div>
             </div>
           </div>
 
@@ -187,39 +196,39 @@ const TechStack = ({ classicHeader, darkTheme }) => {
               <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
                 DBs and Cloud
               </h3>
-              <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
+              <div className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
                 <ul
                   className={
                     "social-icons justify-content-center justify-content-md-start"
                   }
                 >
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Firebase" placement="bottom">
                       <img src={firebase} alt="firebase" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="MongoDB" placement="bottom">
                       <img src={mongodb} alt="mongodb" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="SQL" placement="bottom">
                       <img src={sql} alt="sql" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Heroku" placement="bottom">
                       <img src={heroku} alt="heroku" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  {/* <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  {/* <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Azure" placement="bottom">
                       <img src={azure} alt="azure" width={"80px"} />
                     </Tooltip>
-                  </div> */}
+                  </li> */}
                 </ul>
-              </p>
+              </div>
             </div>
             <div
               className={
@@ -230,39 +239,39 @@ const TechStack = ({ classicHeader, darkTheme }) => {
               <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
                 More
               </h3>
-              <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
+              <div className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
                 <ul
                   className={
                     "social-icons justify-content-center justify-content-md-start"
                   }
                 >
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="github" placement="bottom">
                       <img src={github} alt="github" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="git" placement="bottom">
                       <img src={git} alt="git" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  {/* <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  {/* <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Visual Studio" placement="bottom">
                       <img src={vs} alt="vs" width={"80px"} />
                     </Tooltip>
-                  </div> */}
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li> */}
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Postman" placement="bottom">
                       <img src={postman} alt="postman" width={"80px"} />
                     </Tooltip>
-                  </div>
-                  <div style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Figma" placement="bottom">
                       <img src={figma} alt="figma" width={"80px"} />
                     </Tooltip>
-                  </div>
+                  </li>
                 </ul>
-              </p>
+              </div>
             </div>
           </div>
         </div>

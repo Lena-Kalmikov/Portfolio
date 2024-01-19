@@ -46,7 +46,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
         <div className="position-relative d-flex text-center mb-5">
           <h2
             className={
-              "text-24  text-uppercase fw-600 w-100 mb-0 " +
+              "text-22  text-uppercase fw-600 w-100 mb-0 " +
               (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
             }
           >
@@ -120,7 +120,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
               <p className={darkTheme ? "text-primary" : "text-danger"}>
                 Baguette Translations
               </p>
-              <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
+              <div className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
                 <ul>
                   <li>
                     International work environment, interacting with clients
@@ -165,7 +165,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
                     Proofreading.
                   </li>
                 </ul>
-              </p>
+              </div>
             </div>
           </div>
         </div>
