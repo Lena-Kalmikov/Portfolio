@@ -66,7 +66,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
   return (
     <section
       id="contact"
-      className={"section " + (darkTheme ? "bg-dark-1" : "bg-light")}
+      className={"section " + (darkTheme ? "bg-dark-1 min-vh-80" : "bg-light")}
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}

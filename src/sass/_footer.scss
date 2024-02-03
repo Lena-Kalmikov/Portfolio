@@ -125,7 +125,7 @@ html[dir="rtl"] #footer {
   flex-wrap: wrap;
   list-style: none;
   li {
-    margin: 2px 6px;
+    // margin: 2px 6px;
     padding: 0;
     overflow: visible;
     a {
@@ -162,86 +162,86 @@ html[dir="rtl"] #footer {
   &.social-icons-muted li a {
     color: #aab1b8;
   }
-  li:hover {
-    a {
-      color: #999;
-    }
-  }
-  li:hover.social-icons-twitter a, &.social-icons-colored li.social-icons-twitter a {
-    color: $twitter;
-  }
-  li:hover.social-icons-facebook a, &.social-icons-colored li.social-icons-facebook a {
-    color: $facebook;
-  }
-  li:hover.social-icons-linkedin a, &.social-icons-colored li.social-icons-linkedin a {
-    color: $linkedin;
-  }
-  li:hover.social-icons-rss a, &.social-icons-colored li.social-icons-rss a {
-    color: $rss;
-  }
-  li:hover.social-icons-dribbble a, &.social-icons-colored li.social-icons-dribbble a {
-    color: $dribbble;
-  }
-  li:hover.social-icons-github a, &.social-icons-colored li.social-icons-github a {
-    color: $github;
-  }
-  li:hover.social-icons-behance a, &.social-icons-colored li.social-icons-behance a {
-    color: $behance;
-  }
-  li:hover.social-icons-google a, &.social-icons-colored li.social-icons-google a {
-    color: $google;
-  }
-  li:hover.social-icons-pinterest a, &.social-icons-colored li.social-icons-pinterest a {
-    color: $pinterest;
-  }
-  li:hover.social-icons-youtube a, &.social-icons-colored li.social-icons-youtube a {
-    color: $youtube;
-  }
-  li:hover.social-icons-instagram a, &.social-icons-colored li.social-icons-instagram a {
-    color: $instagram;
-  }
-  li:hover.social-icons-skype a, &.social-icons-colored li.social-icons-skype a {
-    color: $skype;
-  }
-  li:hover.social-icons-email a, &.social-icons-colored li.social-icons-email a {
-    color: $email;
-  }
-  li:hover.social-icons-vk a, &.social-icons-colored li.social-icons-vk a {
-    color: $vk;
-  }
-  li:hover.social-icons-xing a, &.social-icons-colored li.social-icons-xing a {
-    color: $xing;
-  }
-  li:hover.social-icons-tumblr a, &.social-icons-colored li.social-icons-tumblr a {
-    color: $tumblr;
-  }
-  li:hover.social-icons-reddit a, &.social-icons-colored li.social-icons-reddit a {
-    color: $reddit;
-  }
-  li:hover.social-icons-delicious a, &.social-icons-colored li.social-icons-delicious a {
-    color: $delicious;
-  }
-  li:hover.social-icons-stumbleupon a, &.social-icons-colored li.social-icons-stumbleupon a {
-    color: $stumbleupon;
-  }
-  li:hover.social-icons-digg a, &.social-icons-colored li.social-icons-digg a {
-    color: $digg;
-  }
-  li:hover.social-icons-blogger a, &.social-icons-colored li.social-icons-blogger a {
-    color: $blogger;
-  }
-  li:hover.social-icons-flickr a, &.social-icons-colored li.social-icons-flickr a {
-    color: $flickr;
-  }
-  li:hover.social-icons-vimeo a, &.social-icons-colored li.social-icons-vimeo a {
-    color: $vimeo;
-  }
-  li:hover.social-icons-yahoo a, &.social-icons-colored li.social-icons-yahoo a {
-    color: $yahoo;
-  }
-  li:hover.social-icons-apple a, &.social-icons-colored li.social-icons-apple a {
-    color: $appstore;
-  }
+  // li:hover {
+  //   a {
+  //     color: #999;
+  //   }
+  // }
+  // li:hover.social-icons-twitter a, &.social-icons-colored li.social-icons-twitter a {
+  //   color: $twitter;
+  // }
+  // li:hover.social-icons-facebook a, &.social-icons-colored li.social-icons-facebook a {
+  //   color: $facebook;
+  // }
+  // li:hover.social-icons-linkedin a, &.social-icons-colored li.social-icons-linkedin a {
+  //   color: $linkedin;
+  // }
+  // li:hover.social-icons-rss a, &.social-icons-colored li.social-icons-rss a {
+  //   color: $rss;
+  // }
+  // li:hover.social-icons-dribbble a, &.social-icons-colored li.social-icons-dribbble a {
+  //   color: $dribbble;
+  // }
+  // li:hover.social-icons-github a, &.social-icons-colored li.social-icons-github a {
+  //   color: $github;
+  // }
+  // li:hover.social-icons-behance a, &.social-icons-colored li.social-icons-behance a {
+  //   color: $behance;
+  // }
+  // li:hover.social-icons-google a, &.social-icons-colored li.social-icons-google a {
+  //   color: $google;
+  // }
+  // li:hover.social-icons-pinterest a, &.social-icons-colored li.social-icons-pinterest a {
+  //   color: $pinterest;
+  // }
+  // li:hover.social-icons-youtube a, &.social-icons-colored li.social-icons-youtube a {
+  //   color: $youtube;
+  // }
+  // li:hover.social-icons-instagram a, &.social-icons-colored li.social-icons-instagram a {
+  //   color: $instagram;
+  // }
+  // li:hover.social-icons-skype a, &.social-icons-colored li.social-icons-skype a {
+  //   color: $skype;
+  // }
+  // li:hover.social-icons-email a, &.social-icons-colored li.social-icons-email a {
+  //   color: $email;
+  // }
+  // li:hover.social-icons-vk a, &.social-icons-colored li.social-icons-vk a {
+  //   color: $vk;
+  // }
+  // li:hover.social-icons-xing a, &.social-icons-colored li.social-icons-xing a {
+  //   color: $xing;
+  // }
+  // li:hover.social-icons-tumblr a, &.social-icons-colored li.social-icons-tumblr a {
+  //   color: $tumblr;
+  // }
+  // li:hover.social-icons-reddit a, &.social-icons-colored li.social-icons-reddit a {
+  //   color: $reddit;
+  // }
+  // li:hover.social-icons-delicious a, &.social-icons-colored li.social-icons-delicious a {
+  //   color: $delicious;
+  // }
+  // li:hover.social-icons-stumbleupon a, &.social-icons-colored li.social-icons-stumbleupon a {
+  //   color: $stumbleupon;
+  // }
+  // li:hover.social-icons-digg a, &.social-icons-colored li.social-icons-digg a {
+  //   color: $digg;
+  // }
+  // li:hover.social-icons-blogger a, &.social-icons-colored li.social-icons-blogger a {
+  //   color: $blogger;
+  // }
+  // li:hover.social-icons-flickr a, &.social-icons-colored li.social-icons-flickr a {
+  //   color: $flickr;
+  // }
+  // li:hover.social-icons-vimeo a, &.social-icons-colored li.social-icons-vimeo a {
+  //   color: $vimeo;
+  // }
+  // li:hover.social-icons-yahoo a, &.social-icons-colored li.social-icons-yahoo a {
+  //   color: $yahoo;
+  // }
+  // li:hover.social-icons-apple a, &.social-icons-colored li.social-icons-apple a {
+  //   color: $appstore;
+  // }
   &.social-icons-colored li {
     &:hover a {
       color: #999;

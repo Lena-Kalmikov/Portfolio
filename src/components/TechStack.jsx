@@ -68,7 +68,7 @@ const TechStack = ({ classicHeader, darkTheme }) => {
               <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
                 Front-End
               </h3>
-              <div className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
+              <div className={"mb-0" + (darkTheme ? "text-white-50" : "")}>
                 <ul
                   className={
                     "social-icons justify-content-center justify-content-md-start"
