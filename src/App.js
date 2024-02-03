@@ -84,7 +84,7 @@ function App() {
             <Resume
               classicHeader={classicHeader}
               darkTheme={darkTheme}
-            ></Resume>{" "}
+            ></Resume>
             <TechStack
               classicHeader={classicHeader}
               darkTheme={darkTheme}

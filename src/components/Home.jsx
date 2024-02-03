@@ -6,7 +6,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
   return (
     <section id="home">
       <div className="hero-wrap">
-        <div className="hero-mask opacity-1 bg-dark" />
+        <div className="hero-mask opacity-3 bg-dark" />
 
         {/* ---------------image background------------------ */}
         {/* <div
@@ -31,7 +31,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
             <div className="row">
               <div
                 className="col-12 text-center"
-                style={{ marginTop: "-220px" }}
+                // style={{ marginTop: "-220px" }}
               >
                 <p className="text-8 fw-500 text-white mb-2 mb-md-3">Hey there,</p>
                 <h2 className="text-15 fw-600 text-white mb-2 mb-md-3">

@@ -83,7 +83,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
               <a
                 href={resumeFile}
                 download
-                className="btn btn-primary rounded-pill"
+                className="btn btn-primary rounded-pill mt-2"
               >
                 Download CV
               </a>
