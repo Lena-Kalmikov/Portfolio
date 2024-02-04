@@ -45,12 +45,12 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
               quick learner, always seeking to broaden my knowledge and develop
               new skills. A team player with high communication skills, capable
               of working under pressure with tight deadlines. A problem solver
-              with high motivation to contribute to the success of any mission
+              motivated to contribute to the success of any mission
               at hand.
             </p>
             <p className={darkTheme ? "text-4 text-white-50" : ""}>
               For the past 7 years, I've worked as a Project Manager in a global
-              translations company, acquiring a vast experience that will be an
+              company, acquiring a vast experience that will be an
               asset to any team I'll be a part of. I've managed a variety of
               projects, and have gained a lot of experience in working with
               clients from all over the world.

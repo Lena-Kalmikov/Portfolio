@@ -81,10 +81,6 @@ function App() {
               classicHeader={classicHeader}
               darkTheme={darkTheme}
             ></AboutUs>
-            <Resume
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></Resume>
             <TechStack
               classicHeader={classicHeader}
               darkTheme={darkTheme}
@@ -97,6 +93,10 @@ function App() {
               classicHeader={classicHeader}
               darkTheme={darkTheme}
             ></Testimonials> */}
+            <Resume
+              classicHeader={classicHeader}
+              darkTheme={darkTheme}
+            ></Resume>
             <Contact
               classicHeader={classicHeader}
               darkTheme={darkTheme}

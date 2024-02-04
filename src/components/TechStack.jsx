@@ -34,7 +34,7 @@ const TechStack = ({ classicHeader, darkTheme }) => {
   return (
     <section
       id="techStack"
-      className={"section " + (darkTheme ? "bg-dark-1 min-vh-100" : "")}
+      className={"section " + (darkTheme ? "bg-dark-2 min-vh-100" : "")}
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         <div className="position-relative d-flex text-center mb-5">
