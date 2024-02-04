@@ -2,13 +2,16 @@ import React from "react";
 import resumeFile from "../documents/resume.pdf";
 const AboutUs = ({ classicHeader, darkTheme }) => {
   return (
-    <section id="about" className={"section " + (darkTheme ? "bg-dark-1" : "")}>
+    <section
+      id="about"
+      className={"section " + (darkTheme ? "bg-dark-1 min-vh-100" : "")}
+    >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
         <div className="position-relative d-flex text-center mb-5">
           <h2
             className={
-              "text-22  text-uppercase fw-600 w-100 mb-0 " +
+              "text-22  text-uppercase fw-600 w-100 mb-3 " +
               (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
             }
           >
@@ -27,7 +30,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
         {/* Heading end*/}
         <div className="row gy-5">
           {/* About me content start */}
-          <div className="col-lg-7 col-xl-8 text-center text-lg-start">
+          <div className="col-lg-7 col-xl-8 ">
             <h2
               className={
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
@@ -36,23 +39,28 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
               I'm <span className="text-primary">Lena Kalmikov,</span> a
               Full-Stack Developer
             </h2>
-            <p className={darkTheme ? "text-white-50" : ""}>
-              I am a diligent Project Manager with 7 years of experience that
-              found a new passion in Software Development.
+            <p className={darkTheme ? "text-4 text-white-50" : ""}>
+              I am a passionate developer with a good understanding of UX/UI
+              design. Reliable, organized and detail-oriented individual. A
+              quick learner, always seeking to broaden my knowledge and develop
+              new skills. A team player with high communication skills, capable
+              of working under pressure with tight deadlines. A problem solver
+              with high motivation to contribute to the success of any mission
+              at hand.
             </p>
-            <p className={darkTheme ? "text-white-50" : ""}>
-              Reliable, organized and detail-oriented individual. A quick
-              learner, always seeking to broaden my knowledge and develop new
-              skills. Highly communicative and a team player capable of working
-              under pressure with tight deadlines. A problem solver with high
-              motivation to contribute to the success of any mission at hand.
+            <p className={darkTheme ? "text-4 text-white-50" : ""}>
+              For the past 7 years, I've worked as a Project Manager in a global
+              translations company, acquiring a vast experience that will be an
+              asset to any team I'll be a part of. I've managed a variety of
+              projects, and have gained a lot of experience in working with
+              clients from all over the world.
             </p>
-            <p className={darkTheme ? "text-white-50" : ""}>
+            {/* <p className={darkTheme ? "text-white-50" : ""}>
               Lately, I've completed a year-long program studying to be a
               Full-Stack Developer at Sela College. These days I'm becoming
               closely familiar with React, working on my skills and expanding my
               knowledge further.
-            </p>
+            </p> */}
           </div>
           {/* About me content end */}
           {/* about me personal detials start */}

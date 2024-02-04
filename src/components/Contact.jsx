@@ -66,14 +66,17 @@ const Contact = ({ classicHeader, darkTheme }) => {
   return (
     <section
       id="contact"
-      className={"section " + (darkTheme ? "bg-dark-1 min-vh-80" : "bg-light")}
+      className={"section " + (darkTheme ? "bg-dark-1 min-vh-100" : "bg-light")}
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
-        <div className="position-relative d-flex text-center mb-5">
+        <div
+          className="position-relative d-flex text-center mb-5"
+          // style={{ marginBottom: "100px" }}
+        >
           <h2
             className={
-              "text-22  text-uppercase fw-600 w-100 mb-0 " +
+              "text-22  text-uppercase fw-600 w-100 mb-lg-5 " +
               (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
             }
           >

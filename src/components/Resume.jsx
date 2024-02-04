@@ -122,43 +122,45 @@ const Resume = ({ classicHeader, darkTheme }) => {
               </p>
               <div className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
                 <ul>
-                  <li>
+                  <li className="mb-3">
                     International work environment, interacting with clients
                     mainly from Europe and USA.
                   </li>
-                  <li>Managing the full cycle and all aspects of a project.</li>
-                  <li>
+                  <li className="mb-3">
+                    Managing the full cycle and all aspects of a project.
+                  </li>
+                  <li className="mb-3">
                     Processing client requests and preparing a detailed work
                     plan accordingly.
                   </li>
-                  <li>
+                  <li className="mb-3">
                     Researching and finding appropriate resources for each
                     project.
                   </li>
-                  <li>
+                  <li className="mb-3">
                     Working under tight schedules to meet clients’ deadlines.
                   </li>
-                  <li>
+                  <li className="mb-3">
                     Managing finances, cost control, and budgeting for each
                     project.
                   </li>
-                  <li>
+                  <li className="mb-3">
                     Closely monitoring the progress and workflow of each
                     project.
                   </li>
-                  <li>
+                  <li className="mb-3">
                     Tackling problems and quickly finding suitable solutions to
                     ensure the best possible results.
                   </li>
-                  <li>
+                  <li className="mb-3">
                     Close communication and negotiation with the client to fully
                     meet their expectations.
                   </li>
-                  <li>
+                  <li className="mb-3">
                     Performing internal checks before delivery to ensure the
                     best possible results.
                   </li>
-                  <li>
+                  <li className="mb-3">
                     Skills: Teamwork, Communication, Deadline Oriented,
                     International Environment, Foreign Languages, Project
                     Management, CAT tools, Budgeting, Customer Service,

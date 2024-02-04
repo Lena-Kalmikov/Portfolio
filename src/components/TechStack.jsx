@@ -34,13 +34,13 @@ const TechStack = ({ classicHeader, darkTheme }) => {
   return (
     <section
       id="techStack"
-      className={"section " + (darkTheme ? "bg-dark-1" : "")}
+      className={"section " + (darkTheme ? "bg-dark-1 min-vh-100" : "")}
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         <div className="position-relative d-flex text-center mb-5">
           <h2
             className={
-              "text-24  text-uppercase fw-600 w-100 mb-0 " +
+              "text-24  text-uppercase fw-600 w-100 mb-lg-3 " +
               (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
             }
           >
