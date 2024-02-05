@@ -59,7 +59,9 @@ function App() {
   return (
     <>
       <div
-        style={{ position: "relative" }}
+        style={{
+          position: "relative",
+        }}
         className={classicHeader ? "" : "side-header"}
       >
         {isLoading && <PreLoader></PreLoader>}
