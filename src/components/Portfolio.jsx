@@ -103,6 +103,10 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         name: "www.example.com",
         link: "https://www.example.com",
       },
+      github: {
+        name: "www.github.com",
+        link: "https://www.github.com",
+      },
       thumbImage: "images/projects/project-5.jpg",
       sliderImages: [
         "images/projects/project-1.jpg",
@@ -230,7 +234,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                             <h5 className="text-white fw-400">
                               {project.title}
                             </h5>
-                            <span className="text-light">{project.categories}</span>
+                            <span className="text-light">
+                              {project.categories}
+                            </span>
                           </div>
                         </div>
                       </div>

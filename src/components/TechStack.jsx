@@ -161,11 +161,11 @@ const TechStack = ({ classicHeader, darkTheme }) => {
                       <img src={nodejs} alt="nodejs" width={"80"} />
                     </Tooltip>
                   </li>
-                  <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
+                  {/* <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Express JS" placement="bottom">
                       <img src={express} alt="express" width={"80px"} />
                     </Tooltip>
-                  </li>
+                  </li> */}
                   {/* <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Socket.IO" placement="bottom">
                       <img src={socketio} alt="socket.io" width={"80px"} />
@@ -217,11 +217,11 @@ const TechStack = ({ classicHeader, darkTheme }) => {
                       <img src={sql} alt="sql" width={"80px"} />
                     </Tooltip>
                   </li>
-                  <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
+                  {/* <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Heroku" placement="bottom">
                       <img src={heroku} alt="heroku" width={"80px"} />
                     </Tooltip>
-                  </li>
+                  </li> */}
                   {/* <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Azure" placement="bottom">
                       <img src={azure} alt="azure" width={"80px"} />

@@ -106,7 +106,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                         "list-style-2 " + (darkTheme ? "list-style-light" : "")
                       }
                     >
-                      <li>
+                      {/* <li>
                         <span
                           className={
                             "text-dark font-weight-600 me-2" +
@@ -116,7 +116,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                           Client:
                         </span>
                         {projectDetails?.client}
-                      </li>
+                      </li> */}
                       <li>
                         <span
                           className={
@@ -128,7 +128,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                         </span>
                         {projectDetails?.technologies}
                       </li>
-                      <li>
+                      {/* <li>
                         <span
                           className={
                             "text-dark font-weight-600 me-2" +
@@ -138,7 +138,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                           Industry:
                         </span>
                         {projectDetails?.industry}
-                      </li>
+                      </li> */}
                       <li>
                         <span
                           className={
@@ -157,6 +157,23 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                             (darkTheme ? " text-white" : "")
                           }
                         >
+                          Github:
+                        </span>
+                        <a
+                          href={projectDetails?.github?.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {projectDetails?.github?.name}
+                        </a>
+                      </li>
+                      {projectDetails?.url?.link ? (<li>
+                        <span
+                          className={
+                            "text-dark font-weight-600 me-2" +
+                            (darkTheme ? " text-white" : "")
+                          }
+                        >
                           URL:
                         </span>
                         <a
@@ -166,9 +183,10 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                         >
                           {projectDetails?.url?.name}
                         </a>
-                      </li>
+                      </li>) : ("")}
+                      
                     </ul>
-                    <div className="row no-gutters align-items-center">
+                    {/* <div className="row no-gutters align-items-center">
                       <div
                         className={
                           "col-auto text-dark font-weight-600" +
@@ -241,7 +259,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                           </li>
                         </ul>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
