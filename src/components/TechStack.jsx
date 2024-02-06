@@ -27,10 +27,8 @@ import vs from "../images/techStack/vs.png";
 import express from "../images/techStack/express.png";
 import net from "../images/techStack/net.png";
 import socketio from "../images/techStack/socketio.png";
-import { useState } from "react";
 
 const TechStack = ({ darkTheme }) => {
-    const [width, setWidth] = useState("80px");
   return (
     <section
       id="techStack"
@@ -46,16 +44,6 @@ const TechStack = ({ darkTheme }) => {
           >
             Tech Stack
           </h2>
-          {/* <p
-            className={
-              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
-              (darkTheme ? "text-white" : "text-dark")
-            }
-          >
-            {" "}
-            Skills
-            <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
-          </p> */}
         </div>
         <div className="row gx-5">
           <div className="col-md-6">
@@ -80,9 +68,6 @@ const TechStack = ({ darkTheme }) => {
                         src={js}
                         alt="java script"
                         width={"80px"}
-                        // style={{ width: width }}
-                        // onMouseEnter={() => setWidth("84px")}
-                        // onMouseLeave={() => setWidth("80px")}
                       />
                     </Tooltip>
                   </li>
@@ -91,7 +76,6 @@ const TechStack = ({ darkTheme }) => {
                       <img src={reactjs} alt="reactjs" width={"80px"} />
                     </Tooltip>
                   </li>
-
                   {/* <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
                     <Tooltip text="react router" placement="bottom">
                       <img src={reactrouter} alt="reactrouter" width={"80px"} />
@@ -185,7 +169,6 @@ const TechStack = ({ darkTheme }) => {
               </div>
             </div>
           </div>
-
           <div className="col-md-6">
             <div
               className={

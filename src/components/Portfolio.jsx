@@ -98,7 +98,7 @@ const Portfolio = ({ darkTheme }) => {
       title: "Dodge Game",
       projectInfo:
         "My take on the classic dodge game, where you're playing a dinosaur trying to run away from the meteorites trying to extinct you. You can collect some dino coins while at it.",
-      technologies: "C#, Xaml",
+      technologies: "C#, Xaml, .Net Framework",
       github: {
         name: "Dodge Game",
         link: "https://github.com/Lena-Kalmikov/Dodge-Game",

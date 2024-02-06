@@ -1,16 +1,16 @@
 import "./App.scss";
-import Header from "./components/Header";
-import Home from "./components/Home";
-import AboutUs from "./components/About";
-import Resume from "./components/Resume";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import { commonConfig } from "./config/commonConfig";
+import Home from "./components/Home";
+import AboutUs from "./components/About";
+import Header from "./components/Header";
+import Resume from "./components/Resume";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import Portfolio from "./components/Portfolio";
 import PreLoader from "./components/Preloader";
-import { Tooltip } from "./components/Tooltip";
 import TechStack from "./components/TechStack";
+import { Tooltip } from "./components/Tooltip";
 
 function App() {
   const classicHeader = commonConfig.classicHeader;

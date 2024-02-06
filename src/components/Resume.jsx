@@ -1,5 +1,5 @@
 import React from "react";
-import resumeFile from "../documents/resume.pdf";
+import resumeFile from "../documents/lena-kalmikov-resume.pdf";
 
 const Resume = ({ darkTheme }) => {
   const educationDetails = [
@@ -52,21 +52,11 @@ const Resume = ({ darkTheme }) => {
           >
             Resume
           </h2>
-          {/* <p
-            className={
-              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
-              (darkTheme ? "text-white" : "text-dark")
-            }
-          >
-            {" "}
-            Resume
-            <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
-          </p> */}
         </div>
         {/* Heading end*/}
         <div className="row gx-5">
           {/* My Education */}
-          <div className="col-md-6">
+          <div className="col-md-7">
             <h2
               className={
                 "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
@@ -79,14 +69,16 @@ const Resume = ({ darkTheme }) => {
                 <div
                   key={index}
                   className={
-                    "bg-white  rounded p-4 mb-4 " +
+                    "bg-white rounded p-4 mb-2 " +
                     (darkTheme ? "bg-dark" : "bg-white border")
                   }
                 >
                   <p className="badge bg-primary text-2 fw-400">
                     {value.yearRange}
                   </p>
-                  <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
+                  <h3
+                    className={"text-4 " + (darkTheme ? "text-white" : "")}
+                  >
                     {value.title}
                   </h3>
                   <p className={darkTheme ? "text-primary" : "text-danger"}>
@@ -99,7 +91,7 @@ const Resume = ({ darkTheme }) => {
               ))}
           </div>
           {/* My Experience */}
-          <div className="col-md-6">
+          <div className="col-md-5">
             <h2
               className={
                 "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
@@ -160,12 +152,12 @@ const Resume = ({ darkTheme }) => {
                     Performing internal checks before delivery to ensure the
                     best possible results.
                   </li>
-                  <li className="mb-3">
+                  {/* <li className="mb-3">
                     Skills: Teamwork, Communication, Deadline Oriented,
                     International Environment, Foreign Languages, Project
                     Management, CAT tools, Budgeting, Customer Service,
                     Proofreading.
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
