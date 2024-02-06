@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
+
 import { ToastContainer, toast } from "react-toastify";
 
 import github from "../images/github.png";
@@ -12,7 +14,7 @@ import whatsappOnHover from "../images/whatsapp_original.png";
 import "react-toastify/dist/ReactToastify.css";
 import { Tooltip } from "./Tooltip";
 
-const Contact = ({ classicHeader, darkTheme }) => {
+const Contact = ({ darkTheme }) => {
   const form = useRef();
   const [sendingMail, setSendingMail] = useState(false);
 
@@ -20,47 +22,42 @@ const Contact = ({ classicHeader, darkTheme }) => {
   const [linkedinIcon, setLinkedinIcon] = useState(linkedin);
   const [whatsappIcon, setWhatsappIcon] = useState(whatsapp);
 
+  emailjs.init("9qY2oYYMPPXgebIUK");
+
   const sendEmail = (e) => {
     e.preventDefault();
     setSendingMail(true);
-    emailjs
-      .sendForm(
-        "service_i86k3ms",
-        "template_si6cin9",
-        form.current,
-        "c9HsDgGF0tvWyVnAL"
-      )
-      .then(
-        (result) => {
-          document.getElementById("contact-form").reset();
-          toast.success("Message sent successfully!", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: darkTheme ? "dark" : "light",
-          });
-          console.log(result.text);
-          setSendingMail(false);
-        },
-        (error) => {
-          toast.error("Something went wrong!", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: darkTheme ? "dark" : "light",
-          });
-          console.log(error.text);
-          setSendingMail(false);
-        }
-      );
+    emailjs.sendForm("service_604zdy6", "template_zv5e1v5", form.current).then(
+      (result) => {
+        document.getElementById("contact-form").reset();
+        toast.success("Message sent successfully!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: darkTheme ? "dark" : "light",
+        });
+        console.log(result.text);
+        setSendingMail(false);
+      },
+      (error) => {
+        toast.error("Something went wrong!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: darkTheme ? "dark" : "light",
+        });
+        console.log(error.text);
+        setSendingMail(false);
+      }
+    );
   };
 
   return (
@@ -68,7 +65,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
       id="contact"
       className={"section " + (darkTheme ? "bg-dark-1 min-vh-100" : "bg-light")}
     >
-      <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
+      <div className={"container px-lg-5"}>
         {/* Heading */}
         <div
           className="position-relative d-flex text-center mb-5"
@@ -237,7 +234,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
                       <span
                         role="status"
                         aria-hidden="true"
-                        class="spinner-border spinner-border-sm align-self-center me-2"
+                        className="spinner-border spinner-border-sm align-self-center me-2"
                       ></span>
                       Sending...
                     </>

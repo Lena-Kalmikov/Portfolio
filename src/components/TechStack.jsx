@@ -29,14 +29,14 @@ import net from "../images/techStack/net.png";
 import socketio from "../images/techStack/socketio.png";
 import { useState } from "react";
 
-const TechStack = ({ classicHeader, darkTheme }) => {
+const TechStack = ({ darkTheme }) => {
     const [width, setWidth] = useState("80px");
   return (
     <section
       id="techStack"
       className={"section " + (darkTheme ? "bg-dark-2 min-vh-100" : "")}
     >
-      <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
+      <div className={"container px-lg-5"}>
         <div className="position-relative d-flex text-center mb-5">
           <h2
             className={

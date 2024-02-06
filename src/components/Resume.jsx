@@ -1,7 +1,7 @@
 import React from "react";
 import resumeFile from "../documents/resume.pdf";
 
-const Resume = ({ classicHeader, darkTheme }) => {
+const Resume = ({ darkTheme }) => {
   const educationDetails = [
     {
       yearRange: "2021 - 2022",
@@ -41,7 +41,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
       id="resume"
       className={"section " + (darkTheme ? "bg-dark-2" : "")}
     >
-      <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
+      <div className={"container px-lg-5"}>
         {/* Heading */}
         <div className="position-relative d-flex text-center mb-5">
           <h2

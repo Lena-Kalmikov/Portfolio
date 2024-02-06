@@ -2,17 +2,12 @@ import "./App.scss";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import AboutUs from "./components/About";
-import Services from "./components/Services";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
-import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
-import ClassicHeader from "./components/ClassicHeader";
 import { commonConfig } from "./config/commonConfig";
-import TermsAndConditions from "./components/TermsAndConditions";
-import Disclaimer from "./components/Disclaimer";
 import PreLoader from "./components/Preloader";
 import { Tooltip } from "./components/Tooltip";
 import TechStack from "./components/TechStack";
@@ -67,45 +62,16 @@ function App() {
         {isLoading && <PreLoader></PreLoader>}
 
         <div id="main-wrapper">
-          {classicHeader ? (
-            <ClassicHeader handleNavClick={handleNavClick}></ClassicHeader>
-          ) : (
-            <Header handleNavClick={handleNavClick}></Header>
-          )}
-
+          <Header handleNavClick={handleNavClick}></Header>
           <div id="content" role="main">
-            <Home
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-              handleNavClick={handleNavClick}
-            ></Home>
-            <AboutUs
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></AboutUs>
-            <TechStack
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></TechStack>
-            <Portfolio
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></Portfolio>
-            {/* <Testimonials
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></Testimonials> */}
-            <Resume
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></Resume>
-            <Contact
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></Contact>
+            <Home darkTheme={darkTheme} handleNavClick={handleNavClick}></Home>
+            <AboutUs darkTheme={darkTheme}></AboutUs>
+            <TechStack darkTheme={darkTheme}></TechStack>
+            <Portfolio darkTheme={darkTheme}></Portfolio>
+            <Resume darkTheme={darkTheme}></Resume>
+            <Contact darkTheme={darkTheme}></Contact>
           </div>
           <Footer
-            classicHeader={classicHeader}
             darkTheme={darkTheme}
             handleNavClick={handleNavClick}
           ></Footer>
@@ -123,9 +89,6 @@ function App() {
             <i className="fa fa-chevron-up"></i>
           </span>
         </Tooltip>
-
-        <TermsAndConditions darkTheme={darkTheme}></TermsAndConditions>
-        <Disclaimer darkTheme={darkTheme}></Disclaimer>
       </div>
     </>
   );

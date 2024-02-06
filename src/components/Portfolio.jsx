@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Isotope from "isotope-layout";
 import ProjectDetailsModal from "./ProjectDetailsModal";
-const Portfolio = ({ classicHeader, darkTheme }) => {
+const Portfolio = ({ darkTheme }) => {
   // init one ref to store the future isotope object
   const isotope = useRef();
   // store the filter keyword in a state
@@ -139,7 +139,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         id="portfolio"
         className={"section " + (darkTheme ? "bg-dark-1" : "bg-light")}
       >
-        <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
+        <div className={"container px-lg-5"}>
           {/* Heading */}
           <div className="position-relative d-flex text-center">
             <h2

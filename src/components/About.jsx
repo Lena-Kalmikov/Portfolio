@@ -1,12 +1,12 @@
 import React from "react";
 import resumeFile from "../documents/resume.pdf";
-const AboutUs = ({ classicHeader, darkTheme }) => {
+const AboutUs = ({ darkTheme }) => {
   return (
     <section
       id="about"
       className={"section " + (darkTheme ? "bg-dark-1 min-vh-100" : "")}
     >
-      <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
+      <div className={"container px-lg-5"}>
         {/* Heading */}
         <div className="position-relative d-flex text-center mb-5">
           <h2

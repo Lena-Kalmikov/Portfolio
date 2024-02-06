@@ -9,7 +9,7 @@ import githubOnHover from "../images/github_original.png";
 import linkedinOnHover from "../images/linkedin_original.png";
 import whatsappOnHover from "../images/whatsapp_original.png";
 
-const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
+const Header = ({ darkTheme, homeRef, handleNavClick }) => {
   const [isNavModalClose, setIsNavModalClose] = useState(true);
 
   const [githubIcon, setGithubIcon] = useState(github);
