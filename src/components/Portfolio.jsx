@@ -16,6 +16,85 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
 
   const projectsData = [
     {
+      title: "Book Catalogue Website ",
+      projectInfo:
+        "Bookstore catalogue website is a place where people can browse books by genre, view it's details and add comments. Admins can preform CRUD operations - create, review, update and delete books.",
+      technologies: "C#, JavaScript, HTML, CSS, Bootstrap, MSSQL",
+      github: {
+        name: "Bookstore Catalogue Website",
+        link: "https://github.com/Lena-Kalmikov/Bookstore-Catalogue-Website",
+      },
+      thumbImage: "images/projects/bookstore.PNG",
+      sliderImages: [
+        "images/projects/bookstore2.PNG",
+        "images/projects/bookstore3.PNG",
+        "images/projects/bookstore4.PNG",
+        "images/projects/bookstore5.PNG",
+        "images/projects/bookstore6.PNG",
+        "images/projects/bookstore7.PNG",
+      ],
+      categories: [filters.CSHARP],
+    },
+
+    {
+      title: "Board Games Website",
+      projectInfo:
+        "PlayDate is a board games website where people can browse board games and game events. Logged-in users can create their own events, add/delete comments, join existing events and much more.",
+      technologies:
+        "ReactJS, CSS, Material UI, react-router-dom, react-hook-form, Firestore Database, Firebase for Authentication, Storage, and Hosting",
+      url: {
+        name: "PlayDate",
+        link: "https://play-date-board-games-website.web.app/",
+      },
+      github: {
+        name: "Board Games Website",
+        link: "https://github.com/Lena-Kalmikov/Board-Games-Website",
+      },
+      thumbImage: "images/projects/playdate/playdate0.PNG",
+      sliderImages: [
+        "images/projects/playdate/playdate1.PNG",
+        "images/projects/playdate/playdate2.PNG",
+        "images/projects/playdate/playdate3.PNG",
+        "images/projects/playdate/playdate4.PNG",
+        "images/projects/playdate/playdate5.PNG",
+        "images/projects/playdate/playdate6.PNG",
+        "images/projects/playdate/playdate8.PNG",
+        "images/projects/playdate/playdate9.PNG",
+        "images/projects/playdate/playdate10.PNG",
+        "images/projects/playdate/playdate11.PNG",
+        "images/projects/playdate/playdate12.PNG",
+        "images/projects/playdate/playdate13.PNG",
+        "images/projects/playdate/playdate14.PNG",
+        "images/projects/playdate/playdate15.PNG",
+      ],
+      categories: [filters.JAVASCRIPT],
+    },
+    {
+      title: "Airport Simulation",
+      projectInfo:
+        "The goal of this project was to create an App that manages plane traffic in an airport, routing arriving and departing planes to different stations, managing variable loads and preventing deadlocks.",
+      technologies: "ReactJS, NodeJS, ExpressJS and Socket.IO",
+      github: {
+        name: "Airport Simulation",
+        link: "https://github.com/Lena-Kalmikov/Airport-Simulation",
+      },
+      thumbImage: "images/projects/airport_activity.gif",
+      categories: [filters.JAVASCRIPT],
+    },
+    {
+      title: "Dodge Game",
+      projectInfo:
+        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      technologies: "iOS, HTML5, CSS3, PHP, Java",
+      github: {
+        name: "Dodge Game",
+        link: "https://github.com/Lena-Kalmikov/Dodge-Game",
+      },
+      thumbImage: "images/projects/dodge.PNG",
+      sliderImages: ["images/projects/dodge.gif"],
+      categories: [filters.CSHARP],
+    },
+    {
       title: "Chat And Play",
       projectInfo:
         "The goal of this project was to create a real-time chat app with an option to play an online game with another person. People can register/login, choose another player from an online list which updates in realtime, enter a chat room with them - where they can chat and play.",
@@ -31,82 +110,6 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "images/projects/chatandplay3.PNG",
       ],
       categories: [filters.JAVASCRIPT],
-    },
-    {
-      title: "Board Games Website",
-      projectInfo:
-        "PlayDate is a board games website where people can browse board games and game events. Logged-in users can create their own events, add/delete comments, join existing events and much more.",
-      technologies:
-        "ReactJS, CSS, Material UI, react-router-dom, react-hook-form, Firestore Database, Firebase for Authentication, Storage, and Hosting",
-      url: {
-        name: "PlayDate",
-        link: "https://play-date-board-games-website.web.app/",
-      },
-      github: {
-        name: "Board Games Website",
-        link: "https://github.com/Lena-Kalmikov/Board-Games-Website",
-      },
-      thumbImage: "images/projects/playdate.PNG",
-      sliderImages: [
-        "images/projects/playdate2.PNG",
-        "images/projects/playdate3.PNG",
-        "images/projects/playdate4.PNG",
-        "images/projects/playdate5.PNG",
-        "images/projects/playdate6.PNG",
-      ],
-      categories: [filters.JAVASCRIPT],
-    },
-    {
-      title: "Book Catalogue Website ",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      github: {
-        name: "www.example.com",
-        link: "https://www.example.com",
-      },
-      thumbImage: "images/projects/bookstore.PNG",
-      sliderImages: [
-        "images/projects/bookstore2.PNG",
-        "images/projects/bookstore3.PNG",
-        "images/projects/bookstore4.PNG",
-        "images/projects/bookstore5.PNG",
-        "images/projects/bookstore6.PNG",
-        "images/projects/bookstore7.PNG",
-      ],
-      categories: [filters.CSHARP],
-    },
-    {
-      title: "Airport Simulation",
-      projectInfo:
-        "The goal of this project was to create an App that manages plane traffic in an airport, routing arriving and departing planes to different stations, managing variable loads and preventing deadlocks.",
-      technologies: "ReactJS, NodeJS, ExpressJS and Socket.IO",
-      github: {
-        name: "Airport Simulation",
-        link: "https://github.com/Lena-Kalmikov/Airport-Simulation",
-      },
-      thumbImage: "images/projects/airport.PNG",
-      categories: [filters.JAVASCRIPT],
-    },
-    {
-      title: "Dodge Game",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
-      },
-      github: {
-        name: "www.github.com",
-        link: "https://www.github.com",
-      },
-      thumbImage: "images/projects/project-5.jpg",
-      sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
-      ],
-      categories: [filters.CSHARP],
     },
   ];
 
