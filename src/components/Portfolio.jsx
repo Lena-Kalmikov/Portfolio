@@ -16,30 +16,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
 
   const projectsData = [
     {
-      title: "Book Catalogue Website ",
-      projectInfo:
-        "Bookstore catalogue website is a place where people can browse books by genre, view it's details and add comments. Admins can preform CRUD operations - create, review, update and delete books.",
-      technologies: "C#, JavaScript, HTML, CSS, Bootstrap, MSSQL",
-      github: {
-        name: "Bookstore Catalogue Website",
-        link: "https://github.com/Lena-Kalmikov/Bookstore-Catalogue-Website",
-      },
-      thumbImage: "images/projects/bookstore.PNG",
-      sliderImages: [
-        "images/projects/bookstore2.PNG",
-        "images/projects/bookstore3.PNG",
-        "images/projects/bookstore4.PNG",
-        "images/projects/bookstore5.PNG",
-        "images/projects/bookstore6.PNG",
-        "images/projects/bookstore7.PNG",
-      ],
-      categories: [filters.CSHARP],
-    },
-
-    {
       title: "Board Games Website",
       projectInfo:
-        "PlayDate is a board games website where people can browse board games and game events. Logged-in users can create their own events, add/delete comments, join existing events and much more.",
+        "As someone who loves board games and organizing events but couldn't find the right platform, my favorite project became creating such a platform myself. PlayDate is a board games website where people can browse board games and events. Registering to the website allows users to create their own events and delete them, add, edit and delete comments, join existing events, browse event participants, search games, switch modes from dark to light and much more.",
       technologies:
         "ReactJS, CSS, Material UI, react-router-dom, react-hook-form, Firestore Database, Firebase for Authentication, Storage, and Hosting",
       url: {
@@ -63,11 +42,30 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "images/projects/playdate/playdate10.PNG",
         "images/projects/playdate/playdate11.PNG",
         "images/projects/playdate/playdate12.PNG",
-        "images/projects/playdate/playdate13.PNG",
         "images/projects/playdate/playdate14.PNG",
         "images/projects/playdate/playdate15.PNG",
       ],
       categories: [filters.JAVASCRIPT],
+    },
+    {
+      title: "Book Catalogue Website ",
+      projectInfo:
+        "On this site, people can browse books, search by genre and add comments on a book's page. Admins can preform CRUD operations - create, review, update and delete books.",
+      technologies: "C#, ASP.Net Core, JavaScript, HTML, CSS, Bootstrap, MSSQL",
+      github: {
+        name: "Bookstore Catalogue Website",
+        link: "https://github.com/Lena-Kalmikov/Bookstore-Catalogue-Website",
+      },
+      thumbImage: "images/projects/bookstore.PNG",
+      sliderImages: [
+        "images/projects/bookstore2.PNG",
+        "images/projects/bookstore3.PNG",
+        "images/projects/bookstore4.PNG",
+        "images/projects/bookstore5.PNG",
+        "images/projects/bookstore6.PNG",
+        "images/projects/bookstore7.PNG",
+      ],
+      categories: [filters.CSHARP],
     },
     {
       title: "Airport Simulation",
@@ -78,26 +76,14 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         name: "Airport Simulation",
         link: "https://github.com/Lena-Kalmikov/Airport-Simulation",
       },
-      thumbImage: "images/projects/airport_activity.gif",
+      thumbImage: "images/projects/airport.PNG",
+      sliderImages: ["images/projects/airport_activity.gif"],
       categories: [filters.JAVASCRIPT],
-    },
-    {
-      title: "Dodge Game",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      github: {
-        name: "Dodge Game",
-        link: "https://github.com/Lena-Kalmikov/Dodge-Game",
-      },
-      thumbImage: "images/projects/dodge.PNG",
-      sliderImages: ["images/projects/dodge.gif"],
-      categories: [filters.CSHARP],
     },
     {
       title: "Chat And Play",
       projectInfo:
-        "The goal of this project was to create a real-time chat app with an option to play an online game with another person. People can register/login, choose another player from an online list which updates in realtime, enter a chat room with them - where they can chat and play.",
+        "The goal of this project was to create a real-time chat app with an option to play an online game with another person. People can register/login, choose another player from an online list which updates in realtime, enter a chat room with them and there they can chat and play.",
       technologies:
         "ReactJS, CSS, HTML, NodeJS, ExpressJS, Socket.IO and Azure cloud.",
       github: {
@@ -105,11 +91,21 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         link: "https://github.com/Lena-Kalmikov/Chat-And-Play",
       },
       thumbImage: "images/projects/chatandplay2.PNG",
-      sliderImages: [
-        "images/projects/chatandplay.PNG",
-        "images/projects/chatandplay3.PNG",
-      ],
+      sliderImages: ["images/projects/ChatAndPlay1.gif"],
       categories: [filters.JAVASCRIPT],
+    },
+    {
+      title: "Dodge Game",
+      projectInfo:
+        "My take on the classic dodge game, where you're playing a dinosaur trying to run away from the meteorites trying to extinct you. You can collect some dino coins while at it.",
+      technologies: "C#, Xaml",
+      github: {
+        name: "Dodge Game",
+        link: "https://github.com/Lena-Kalmikov/Dodge-Game",
+      },
+      thumbImage: "images/projects/dodge.PNG",
+      sliderImages: ["images/projects/dodge.gif"],
+      categories: [filters.CSHARP],
     },
   ];
 
@@ -145,7 +141,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       >
         <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
           {/* Heading */}
-          <div className="position-relative d-flex text-center mb-5">
+          <div className="position-relative d-flex text-center">
             <h2
               className={
                 "text-22  text-uppercase fw-600 w-100 mb-0 " +

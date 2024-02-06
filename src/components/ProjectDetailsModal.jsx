@@ -65,8 +65,8 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                 >
                   {projectDetails?.title}
                 </h2>
-                <div className="row g-5">
-                  <div className="col-md-7">
+                <div className="row g-1">
+                  <div className="col-md-6">
                     <Slider {...settings} ref={sliderRef}>
                       <div className="item">
                         <img

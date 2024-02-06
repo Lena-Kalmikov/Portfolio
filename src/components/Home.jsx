@@ -31,11 +31,11 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
             <div className="row">
               <div
                 className="col-12 text-center"
-                // style={{ marginTop: "-220px" }}
+                style={{ marginTop: "-270px" }}
               >
-                <p className="text-8 fw-500 text-white mb-2 mb-md-3">Hey there,</p>
-                <h2 className="text-15 fw-600 text-white mb-2 mb-md-3">
-                  <Typewriter
+                <p className="text-8 fw-500 text-white">Hey there,</p>
+                <h2 className="text-11 fw-600 text-white">
+                  {/* <Typewriter
                     options={{
                       strings: [
                         "I'm Lena Kalmikov.",
@@ -45,7 +45,8 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                       autoStart: true,
                       loop: true,
                     }}
-                  />
+                  /> */}
+                  I'm Lena Kalmikov, <br />a Full-Stack developer
                 </h2>
                 {/* <p className="text-6 text-light mb-4">
                   based in Israel, Ramat-Gan.
