@@ -18,38 +18,41 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     {
       title: "Chat And Play",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
-      url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        "The goal of this project was to create a real-time chat app with an option to play an online game with another person. People can register/login, choose another player from an online list which updates in realtime, enter a chat room with them - where they can chat and play.",
+      technologies:
+        "ReactJS, CSS, HTML, NodeJS, ExpressJS, Socket.IO and Azure cloud.",
+      github: {
+        name: "Chat And Play",
+        link: "https://github.com/Lena-Kalmikov/Chat-And-Play",
       },
-      thumbImage: "images/projects/project-5.jpg",
+      thumbImage: "images/projects/chatandplay2.PNG",
       sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/chatandplay.PNG",
+        "images/projects/chatandplay3.PNG",
       ],
       categories: [filters.JAVASCRIPT],
     },
     {
       title: "Board Games Website",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
+        "PlayDate is a board games website where people can browse board games and game events. Logged-in users can create their own events, add/delete comments, join existing events and much more.",
+      technologies:
+        "ReactJS, CSS, Material UI, react-router-dom, react-hook-form, Firestore Database, Firebase for Authentication, Storage, and Hosting",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "PlayDate",
+        link: "https://play-date-board-games-website.web.app/",
       },
-      thumbImage: "images/projects/project-2.jpg",
+      github: {
+        name: "Board Games Website",
+        link: "https://github.com/Lena-Kalmikov/Board-Games-Website",
+      },
+      thumbImage: "images/projects/playdate.PNG",
       sliderImages: [
-        "images/projects/project-2.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/playdate2.PNG",
+        "images/projects/playdate3.PNG",
+        "images/projects/playdate4.PNG",
+        "images/projects/playdate5.PNG",
+        "images/projects/playdate6.PNG",
       ],
       categories: [filters.JAVASCRIPT],
     },
@@ -57,48 +60,39 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       title: "Book Catalogue Website ",
       projectInfo:
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
-      url: {
+      github: {
         name: "www.example.com",
         link: "https://www.example.com",
       },
-      thumbImage: "images/projects/project-5.jpg",
+      thumbImage: "images/projects/bookstore.PNG",
       sliderImages: [
-        "images/projects/project-3.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/bookstore2.PNG",
+        "images/projects/bookstore3.PNG",
+        "images/projects/bookstore4.PNG",
+        "images/projects/bookstore5.PNG",
+        "images/projects/bookstore6.PNG",
+        "images/projects/bookstore7.PNG",
       ],
       categories: [filters.CSHARP],
     },
     {
       title: "Airport Simulation",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
-      url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        "The goal of this project was to create an App that manages plane traffic in an airport, routing arriving and departing planes to different stations, managing variable loads and preventing deadlocks.",
+      technologies: "ReactJS, NodeJS, ExpressJS and Socket.IO",
+      github: {
+        name: "Airport Simulation",
+        link: "https://github.com/Lena-Kalmikov/Airport-Simulation",
       },
-      thumbImage: "images/projects/project-5.jpg",
-      sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-4.jpg",
-      ],
+      thumbImage: "images/projects/airport.PNG",
       categories: [filters.JAVASCRIPT],
     },
     {
       title: "Dodge Game",
       projectInfo:
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
       url: {
         name: "www.example.com",
         link: "https://www.example.com",
