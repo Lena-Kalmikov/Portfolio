@@ -6,7 +6,7 @@ const Home = ({ handleNavClick }) => {
   return (
     <section id="home">
       <div className="hero-wrap">
-        <div className="hero-mask opacity-3 bg-dark" />
+        <div className="hero-mask opacity-5 bg-dark" />
 
         {/* ---------------image background------------------ */}
         {/* <div
@@ -18,6 +18,7 @@ const Home = ({ handleNavClick }) => {
 
         <div className="player hero-bg parallax">
           <video
+            className="video"
             src={videoBackground}
             autoPlay
             muted
@@ -31,10 +32,13 @@ const Home = ({ handleNavClick }) => {
             <div className="row">
               <div
                 className="col-12 text-center"
-                style={{ marginTop: "-270px" }}
+                // style={{ marginTop: "-270px" }}
               >
                 <p className="text-8 fw-500 text-white">Hey there,</p>
-                <h2 className="text-11 fw-600 text-white">
+                <h2
+                  className="text-11 fw-600 text-white"
+                  style={{ marginTop: "-20px" }}
+                >
                   {/* <Typewriter
                     options={{
                       strings: [

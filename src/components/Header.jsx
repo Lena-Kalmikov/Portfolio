@@ -171,14 +171,14 @@ const Header = ({ darkTheme, homeRef, handleNavClick }) => {
                   <img
                     src={linkedinIcon}
                     alt="linkedin"
-                    width={"28px"}
+                    width={"30px"}
                     onMouseOver={() => setLinkedinIcon(linkedinOnHover)}
                     onMouseOut={() => setLinkedinIcon(linkedin)}
                   />
                 </a>
               </Tooltip>
             </li>
-            <li className="social-icons-github">
+            <li className="social-icons-github me-2 ms-2">
               <Tooltip text="Github" placement="bottom">
                 <a
                   href="https://github.com/Lena-Kalmikov"
@@ -188,7 +188,7 @@ const Header = ({ darkTheme, homeRef, handleNavClick }) => {
                   <img
                     src={githubIcon}
                     alt="github"
-                    width={"28px"}
+                    width={"30px"}
                     onMouseOver={() => setGithubIcon(githubOnHover)}
                     onMouseOut={() => setGithubIcon(github)}
                   />
@@ -205,7 +205,7 @@ const Header = ({ darkTheme, homeRef, handleNavClick }) => {
                   <img
                     src={whatsappIcon}
                     alt="whatsapp"
-                    width={"28px"}
+                    width={"30px"}
                     onMouseOver={() => setWhatsappIcon(whatsappOnHover)}
                     onMouseOut={() => setWhatsappIcon(whatsapp)}
                   />

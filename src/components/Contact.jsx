@@ -125,14 +125,14 @@ const Contact = ({ darkTheme }) => {
                     <img
                       src={linkedinIcon}
                       alt="linkedin"
-                      width={"42px"}
+                      width={"45px"}
                       onMouseOver={() => setLinkedinIcon(linkedinOnHover)}
                       onMouseOut={() => setLinkedinIcon(linkedin)}
                     />
                   </a>
                 </Tooltip>
               </div>
-              <div className="social-icons-github ms-2 me-2">
+              <div className="social-icons-github ms-3 me-3">
                 <Tooltip text="Github" placement="bottom">
                   <a
                     href="https://github.com/Lena-Kalmikov"
@@ -142,7 +142,7 @@ const Contact = ({ darkTheme }) => {
                     <img
                       src={githubIcon}
                       alt="github"
-                      width={"42px"}
+                      width={"45px"}
                       onMouseOver={() => setGithubIcon(githubOnHover)}
                       onMouseOut={() => setGithubIcon(github)}
                     />
@@ -159,7 +159,7 @@ const Contact = ({ darkTheme }) => {
                     <img
                       src={whatsappIcon}
                       alt="whatsapp"
-                      width={"42px"}
+                      width={"45px"}
                       onMouseOver={() => setWhatsappIcon(whatsappOnHover)}
                       onMouseOut={() => setWhatsappIcon(whatsapp)}
                     />
