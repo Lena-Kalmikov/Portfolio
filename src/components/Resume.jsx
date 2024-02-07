@@ -46,12 +46,20 @@ const Resume = ({ darkTheme }) => {
         <div className="position-relative d-flex text-center mb-5">
           <h2
             className={
-              "text-22  text-uppercase fw-600 w-100 mb-0 " +
-              (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
+              "text-19  text-uppercase fw-600 w-100 mb-lg-5 " +
+              (darkTheme ? "text-muted opacity-5" : "text-light opacity-4")
             }
           >
             Resume
           </h2>
+          <p
+            className={
+              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 mt-4 " +
+              (darkTheme ? "text-white" : "text-dark")
+            }
+          >
+            <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto mt-5" />
+          </p>
         </div>
         {/* Heading end*/}
         <div className="row gx-5">
@@ -76,9 +84,7 @@ const Resume = ({ darkTheme }) => {
                   <p className="badge bg-primary text-2 fw-400">
                     {value.yearRange}
                   </p>
-                  <h3
-                    className={"text-4 " + (darkTheme ? "text-white" : "")}
-                  >
+                  <h3 className={"text-4 " + (darkTheme ? "text-white" : "")}>
                     {value.title}
                   </h3>
                   <p className={darkTheme ? "text-primary" : "text-danger"}>
@@ -152,224 +158,11 @@ const Resume = ({ darkTheme }) => {
                     Performing internal checks before delivery to ensure the
                     best possible results.
                   </li>
-                  {/* <li className="mb-3">
-                    Skills: Teamwork, Communication, Deadline Oriented,
-                    International Environment, Foreign Languages, Project
-                    Management, CAT tools, Budgeting, Customer Service,
-                    Proofreading.
-                  </li> */}
                 </ul>
               </div>
             </div>
           </div>
-        </div>
-        {/* My Skills */}
-        {/* <h2
-          className={
-            "text-6 fw-600 mt-4 mb-4 " + (darkTheme ? "text-white" : "")
-          }
-        >
-          Tech Stack
-        </h2> */}
-        <div className="row gx-5">
-          {/* {skills.length > 0 &&
-            skills.map((skill, index) => (
-              <div key={index} className="col-md-6">
-                <p
-                  className={
-                    " fw-500 text-start mb-2 " +
-                    (darkTheme ? "text-light" : "text-dark")
-                  }
-                >
-                  {skill.name}{" "}
-                  <span className="float-end">{skill.percent}%</span>
-                </p>
-                <div
-                  className={
-                    "progress progress-sm mb-4 " + (darkTheme ? "bg-dark" : "")
-                  }
-                >
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    style={{ width: skill.percent + "%" }}
-                    aria-valuenow={skill.percent}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                  />
-                </div>
-              </div>
-            ))} */}
-          {/* <div className="col-md-7">
-            <ul
-              className={
-                "social-icons justify-content-center justify-content-md-start"
-              }
-            >
-              <div className="social-icons">
-                <Tooltip text="Java Script" placement="bottom">
-                  <div>
-                    <img src={js} alt="java script" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="React" placement="bottom">
-                  <div>
-                    <img src={reactjs} alt="reactjs" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="react router" placement="bottom">
-                  <div>
-                    <img src={reactrouter} alt="reactrouter" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="HTML" placement="bottom">
-                  <div>
-                    <img src={html5} alt="html5" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="CSS" placement="bottom">
-                  <div>
-                    <img src={css} alt="css" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="Material UI" placement="bottom">
-                  <div>
-                    <img src={materialui} alt="material-ui" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="sass" placement="bottom">
-                  <div>
-                    <img src={sass} alt="sass" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="Redux" placement="bottom">
-                  <div>
-                    <img src={redux} alt="redux" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="Type Script" placement="bottom">
-                  <div>
-                    <img src={ts} alt="type script" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="C#" placement="bottom">
-                  <div>
-                    <img src={csharp} alt="c-sharp" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="git" placement="bottom">
-                  <div>
-                    <img src={git} alt="git" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="github" placement="bottom">
-                  <div>
-                    <img src={github} alt="github" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="NodeJS" placement="bottom">
-                  <div>
-                    <img src={nodejs} alt="nodejs" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="Mongodb" placement="bottom">
-                  <div>
-                    <img src={mongodb} alt="mongodb" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="MySQL" placement="bottom">
-                  <div>
-                    <img src={mysql} alt="mysql" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="Bootstrap" placement="bottom">
-                  <div>
-                    <img src={bootstrap5} alt="bootstrap5" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="Firebase" placement="bottom">
-                  <div>
-                    <img src={firebase} alt="firebase" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="Heroku" placement="bottom">
-                  <div>
-                    <img src={heroku} alt="heroku" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="Postman" placement="bottom">
-                  <div>
-                    <img src={postman} alt="postman" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="Figma" placement="bottom">
-                  <div>
-                    <img src={figma} alt="figma" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="Azure" placement="bottom">
-                  <div>
-                    <img src={azure} alt="azure" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="Angular" placement="bottom">
-                  <div>
-                    <img src={angular} alt="angular" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-              <div className="social-icons">
-                <Tooltip text="Visual Studio" placement="bottom">
-                  <div>
-                    <img src={vs} alt="vs" width={"90px"} />
-                  </div>
-                </Tooltip>
-              </div>
-            </ul>
-          </div>*/}
-        </div>
+        </div>      
         <div className="text-center mt-5">
           <a
             className="btn btn-outline-secondary rounded-pill shadow-none"

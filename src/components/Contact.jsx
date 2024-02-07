@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-// import emailjs from "@emailjs/browser";
 import emailjs from "emailjs-com";
 
 import { ToastContainer, toast } from "react-toastify";
@@ -67,28 +66,23 @@ const Contact = ({ darkTheme }) => {
     >
       <div className={"container px-lg-5"}>
         {/* Heading */}
-        <div
-          className="position-relative d-flex text-center mb-5"
-          // style={{ marginBottom: "100px" }}
-        >
+        <div className="position-relative d-flex text-center mb-5">
           <h2
             className={
-              "text-22  text-uppercase fw-600 w-100 mb-lg-5 " +
-              (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
+              "text-19  text-uppercase fw-600 w-100 mb-lg-5 " +
+              (darkTheme ? "text-muted opacity-5" : "text-light opacity-4")
             }
           >
             Contact Me
           </h2>
-          {/* <p
+          <p
             className={
-              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
+              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 mt-4 " +
               (darkTheme ? "text-white" : "text-dark")
             }
           >
-            {" "}
-            Get in Touch
-            <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
-          </p> */}
+            <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto mt-5" />
+          </p>
         </div>
         {/* Heading end*/}
         <div className="row gy-5">
@@ -218,7 +212,7 @@ const Contact = ({ darkTheme }) => {
                     className="form-control"
                     rows={5}
                     required
-                    placeholder="Write your message here."
+                    placeholder="Write your message here"
                     defaultValue={""}
                   />
                 </div>

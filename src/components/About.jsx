@@ -11,21 +11,20 @@ const AboutUs = ({ darkTheme }) => {
         <div className="position-relative d-flex text-center mb-5">
           <h2
             className={
-              "text-22  text-uppercase fw-600 w-100 mb-3 " +
-              (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
+              "text-19 text-uppercase fw-600 w-100 mb-lg-5 " +
+              (darkTheme ? "text-muted opacity-5" : "text-light opacity-4")
             }
           >
             About Me
           </h2>
-          {/* <p
+          <p
             className={
-              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
+              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 mt-4 " +
               (darkTheme ? "text-white" : "text-dark")
             }
           >
-            Know Me More
-            <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
-          </p> */}
+            <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto mt-5" />
+          </p>
         </div>
         {/* Heading end*/}
         <div className="row gy-5">
@@ -44,7 +43,7 @@ const AboutUs = ({ darkTheme }) => {
               player, I have strong communication skills and am adept at working
               under pressure. I see challenges as opportunities to solve
               problems and am strongly motivated to achieve success in any task
-              at hand. 
+              at hand.
             </p>
             <p className={darkTheme ? "text-4 text-white-50" : ""}>
               For the past 7 years, I've worked as a Project Manager in a global
@@ -53,12 +52,6 @@ const AboutUs = ({ darkTheme }) => {
               have gained a lot of experience in working with clients from all
               over the world.
             </p>
-            {/* <p className={darkTheme ? "text-white-50" : ""}>
-              Lately, I've completed a year-long program studying to be a
-              Full-Stack Developer at Sela College. These days I'm becoming
-              closely familiar with React, working on my skills and expanding my
-              knowledge further.
-            </p> */}
           </div>
           {/* About me content end */}
           {/* about me personal detials start */}
@@ -79,9 +72,6 @@ const AboutUs = ({ darkTheme }) => {
                     elenakalmikov@gmail.com
                   </a>
                 </li>
-                {/* <li>
-                  <span className="fw-600 me-2">Age:</span>28
-                </li> */}
                 <li className="border-0">
                   <span className="fw-600 me-2">From:</span>Ramat-Gan, Israel
                 </li>
@@ -97,77 +87,6 @@ const AboutUs = ({ darkTheme }) => {
           </div>
           {/* about me personal details end */}
         </div>
-        {/* projects rewards counting start */}
-        <div
-          className={
-            "brands-grid separator-border mt-5 " +
-            (darkTheme ? "separator-border-light" : "")
-          }
-        >
-          {/* <div className="row">
-            <div className="col-6 col-md-3">
-              <div className="featured-box text-center">
-                <h4
-                  className={
-                    "text-12  mb-0 " +
-                    (darkTheme ? "text-white-50" : "text-muted")
-                  }
-                >
-                  <span>10</span>+
-                </h4>
-                <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
-                  Years Experiance
-                </p>
-              </div>
-            </div>
-            <div className="col-6 col-md-3">
-              <div className="featured-box text-center">
-                <h4
-                  className={
-                    "text-12  mb-0 " +
-                    (darkTheme ? "text-white-50" : "text-muted")
-                  }
-                >
-                  <span>250</span>+
-                </h4>
-                <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
-                  Happy Clients
-                </p>
-              </div>
-            </div>
-            <div className="col-6 col-md-3">
-              <div className="featured-box text-center">
-                <h4
-                  className={
-                    "text-12  mb-0 " +
-                    (darkTheme ? "text-white-50" : "text-muted")
-                  }
-                >
-                  <span>650</span>+
-                </h4>
-                <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
-                  Projects Done
-                </p>
-              </div>
-            </div>
-            <div className="col-6 col-md-3">
-              <div className="featured-box text-center">
-                <h4
-                  className={
-                    "text-12  mb-0 " +
-                    (darkTheme ? "text-white-50" : "text-muted")
-                  }
-                >
-                  <span>38</span>
-                </h4>
-                <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
-                  Get Awards
-                </p>
-              </div>
-            </div>
-          </div>*/}
-        </div>
-        {/* projects rewards counting end */}
       </div>
     </section>
   );

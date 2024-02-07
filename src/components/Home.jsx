@@ -1,5 +1,5 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
 import videoBackground from "../videos/home.mp4";
 
 const Home = ({ handleNavClick }) => {
@@ -48,19 +48,6 @@ const Home = ({ handleNavClick }) => {
                   /> */}
                   I'm Lena Kalmikov, <br />a Full-Stack developer
                 </h2>
-                {/* <p className="text-6 text-light mb-4">
-                  based in Israel, Ramat-Gan.
-                </p> */}
-                {/* <a
-                  href="#contact"
-                  className="btn btn-outline-primary rounded-pill shadow-none smooth-scroll mt-2"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavClick("contact");
-                  }}
-                >
-                  Hire Me
-                </a> */}
               </div>
             </div>
           </div>
