@@ -6,7 +6,7 @@ const Home = ({ handleNavClick }) => {
   return (
     <section id="home">
       <div className="hero-wrap">
-        <div className="hero-mask opacity-8 bg-dark" />
+        <div className="hero-mask opacity-7 bg-dark" />
 
         {/* ---------------image background------------------ */}
         {/* <div
