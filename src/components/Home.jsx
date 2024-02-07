@@ -1,24 +1,36 @@
 import React from "react";
 // import Typewriter from "typewriter-effect";
 import videoBackground from "../videos/home.mp4";
+import { useEffect } from "react";
 
 const Home = ({ handleNavClick }) => {
+  useEffect(() => {
+    const isIphone = navigator.userAgent.includes("iPhone");
+    const videoPlayer = document.querySelector(".player");
+    const imageBackground = document.querySelector(".hero-bg.parallax");
+
+    if (isIphone) {
+      videoPlayer.style.display = "none";
+    } else {
+      imageBackground.style.display = "none";
+    }
+  }, []);
+
   return (
     <section id="home">
       <div className="hero-wrap">
         <div className="hero-mask opacity-7 bg-dark" />
 
         {/* ---------------image background------------------ */}
-        {/* <div
+        <div
           className="hero-bg parallax"
-          style={{ backgroundImage: 'url("images/intro-bg.jpg")' }}
-        ></div> */}
+          style={{ backgroundImage: 'url("images/2.PNG")' }}
+        ></div>
 
         {/* -------------------video background---------------------- */}
 
-        <div className="player hero-bg parallax lg">
+        <div className="player hero-bg parallax">
           <video
-            className="video"
             src={videoBackground}
             autoPlay
             muted
@@ -26,14 +38,11 @@ const Home = ({ handleNavClick }) => {
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           ></video>
         </div>
-        
 
         <div className="hero-content section d-flex min-vh-100">
           <div className="container my-auto">
             <div className="row">
-              <div
-                className="col-12 text-center"
-              >
+              <div className="col-12 text-center">
                 <p className="text-8 fw-500 text-white">Hey there,</p>
                 <h2
                   className="text-11 fw-600 text-white"
