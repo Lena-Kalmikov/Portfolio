@@ -1,41 +1,45 @@
 import React from "react";
 // import Typewriter from "typewriter-effect";
 import videoBackground from "../videos/home.mp4";
-// import { useEffect } from "react";
+// import imageBackground from "../videos/home.gif";
 
 const Home = ({ handleNavClick }) => {
-  // useEffect(() => {
-  //   const isIphone = navigator.userAgent.includes("iPhone");
-  //   const videoPlayer = document.querySelector(".player");
-  //   const imageBackground = document.querySelector(".hero-bg.parallax");
-
-  //   if (isIphone) {
-  //     videoPlayer.style.display = "none";
-  //   } else {
-  //     imageBackground.style.display = "none";
-  //   }
-  // }, []);
-
   return (
     <section id="home">
       <div className="hero-wrap">
         <div className="hero-mask opacity-7 bg-dark" />
 
         {/* ---------------image background------------------ */}
+
         {/* <div
-          className="hero-bg parallax"
-          style={{ backgroundImage: 'url("images/2.PNG")' }}
-        ></div> */}
+          className="hero-bg parallax image-bg"
+          // style={{
+          //   backgroundImage: 'url("images/home.gif")',
+          // }}
+        >
+          <img
+            src={imageBackground}
+            alt=""
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          />
+        </div> */}
 
         {/* -------------------video background---------------------- */}
 
-        <div className="player hero-bg parallax">
+        <div
+          className="player hero-bg parallax video-bg"
+          style={{position: "fixed"}}
+        >
           <video
             src={videoBackground}
+            playsInline
             autoPlay
             muted
             loop
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            preload="yes"
+            type="video/mp4"
+            backgroundColor="black"
           ></video>
         </div>
 

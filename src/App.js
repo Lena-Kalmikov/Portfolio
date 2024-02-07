@@ -5,7 +5,6 @@ import Home from "./components/Home";
 import AboutUs from "./components/About";
 import Header from "./components/Header";
 import Resume from "./components/Resume";
-import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import PreLoader from "./components/Preloader";
@@ -71,10 +70,6 @@ function App() {
             <Resume darkTheme={darkTheme}></Resume>
             <Contact darkTheme={darkTheme}></Contact>
           </div>
-          <Footer
-            darkTheme={darkTheme}
-            handleNavClick={handleNavClick}
-          ></Footer>
         </div>
         {/* back to top */}
         <Tooltip text="Back to Top" placement="left">

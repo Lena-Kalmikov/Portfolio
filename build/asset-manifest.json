@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.f041cf2c.css",
-    "main.js": "/static/js/main.a305fd75.js",
+    "main.js": "/static/js/main.b921aa44.js",
     "static/js/787.8c76a088.chunk.js": "/static/js/787.8c76a088.chunk.js",
-    "static/media/home.mp4": "/static/media/home.36d2a617973249a9ac3c.mp4",
-    "static/media/lena-kalmikov-resume.pdf": "/static/media/lena-kalmikov-resume.631f7d9793c5e1414973.pdf",
+    "static/media/home.mp4": "/static/media/home.8bd639181fbed3663396.mp4",
+    "static/media/Lena_Kalmikov_CV.pdf": "/static/media/Lena_Kalmikov_CV.6e98956e9d996e7807dd.pdf",
     "static/media/azure.png": "/static/media/azure.b33f4f2118b64989f181.png",
     "static/media/whatsapp_original.png": "/static/media/whatsapp_original.d026940870fb334920b7.png",
     "static/media/socketio.png": "/static/media/socketio.984f577b5476132ada20.png",
@@ -42,11 +42,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.f041cf2c.css.map": "/static/css/main.f041cf2c.css.map",
-    "main.a305fd75.js.map": "/static/js/main.a305fd75.js.map",
+    "main.b921aa44.js.map": "/static/js/main.b921aa44.js.map",
     "787.8c76a088.chunk.js.map": "/static/js/787.8c76a088.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f041cf2c.css",
-    "static/js/main.a305fd75.js"
+    "static/js/main.b921aa44.js"
   ]
 }
