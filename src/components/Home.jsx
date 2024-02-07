@@ -32,7 +32,6 @@ const Home = ({ handleNavClick }) => {
             <div className="row">
               <div
                 className="col-12 text-center"
-                // style={{ marginTop: "-270px" }}
               >
                 <p className="text-8 fw-500 text-white">Hey there,</p>
                 <h2
