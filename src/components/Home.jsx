@@ -16,7 +16,7 @@ const Home = ({ handleNavClick }) => {
 
         {/* -------------------video background---------------------- */}
 
-        <div className="player hero-bg parallax">
+        <div className="player hero-bg parallax lg">
           <video
             className="video"
             src={videoBackground}
@@ -26,6 +26,7 @@ const Home = ({ handleNavClick }) => {
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           ></video>
         </div>
+        
 
         <div className="hero-content section d-flex min-vh-100">
           <div className="container my-auto">
