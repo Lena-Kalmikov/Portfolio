@@ -1,20 +1,20 @@
 import React from "react";
 // import Typewriter from "typewriter-effect";
 import videoBackground from "../videos/home.mp4";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 const Home = ({ handleNavClick }) => {
-  useEffect(() => {
-    const isIphone = navigator.userAgent.includes("iPhone");
-    const videoPlayer = document.querySelector(".player");
-    const imageBackground = document.querySelector(".hero-bg.parallax");
+  // useEffect(() => {
+  //   const isIphone = navigator.userAgent.includes("iPhone");
+  //   const videoPlayer = document.querySelector(".player");
+  //   const imageBackground = document.querySelector(".hero-bg.parallax");
 
-    if (isIphone) {
-      videoPlayer.style.display = "none";
-    } else {
-      imageBackground.style.display = "none";
-    }
-  }, []);
+  //   if (isIphone) {
+  //     videoPlayer.style.display = "none";
+  //   } else {
+  //     imageBackground.style.display = "none";
+  //   }
+  // }, []);
 
   return (
     <section id="home">
@@ -22,10 +22,10 @@ const Home = ({ handleNavClick }) => {
         <div className="hero-mask opacity-7 bg-dark" />
 
         {/* ---------------image background------------------ */}
-        <div
+        {/* <div
           className="hero-bg parallax"
           style={{ backgroundImage: 'url("images/2.PNG")' }}
-        ></div>
+        ></div> */}
 
         {/* -------------------video background---------------------- */}
 
