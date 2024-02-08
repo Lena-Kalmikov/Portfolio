@@ -15,18 +15,12 @@ import mongodb from "../images/techStack/mongodb.png";
 import firebase from "../images/techStack/firebase.png";
 import git from "../images/techStack/git.png";
 import github from "../images/techStack/github.png";
-import heroku from "../images/techStack/heroku.png";
 import sql from "../images/techStack/sql.png";
 import csharp from "../images/techStack/csharp.png";
 import ts from "../images/techStack/typescript.png";
 import postman from "../images/techStack/postman.png";
-import figma from "../images/techStack/figma.png";
-import azure from "../images/techStack/azure.png";
-import angular from "../images/techStack/angular.png";
-import vs from "../images/techStack/vs.png";
 import express from "../images/techStack/express.png";
 import net from "../images/techStack/net.png";
-import socketio from "../images/techStack/socketio.png";
 
 const TechStack = ({ darkTheme }) => {
   return (
@@ -120,11 +114,6 @@ const TechStack = ({ darkTheme }) => {
                       <img src={ts} alt="type script" width={"80px"} />
                     </Tooltip>
                   </li>
-                  {/* <li style={{ marginRight: "-0.7rem" }}>
-                    <Tooltip text="Angular" placement="bottom">
-                      <img src={angular} alt="angular" width={"80px"} />
-                    </Tooltip>
-                  </li> */}
                 </ul>
               </div>
             </div>
@@ -149,16 +138,11 @@ const TechStack = ({ darkTheme }) => {
                       <img src={nodejs} alt="nodejs" width={"80"} />
                     </Tooltip>
                   </li>
-                  {/* <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
+                  <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Express JS" placement="bottom">
                       <img src={express} alt="express" width={"80px"} />
                     </Tooltip>
-                  </li> */}
-                  {/* <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
-                    <Tooltip text="Socket.IO" placement="bottom">
-                      <img src={socketio} alt="socket.io" width={"80px"} />
-                    </Tooltip>
-                  </li> */}
+                  </li>
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
                     <Tooltip text="C#" placement="bottom">
                       <img src={csharp} alt="c-sharp" width={"80px"} />
@@ -204,16 +188,6 @@ const TechStack = ({ darkTheme }) => {
                       <img src={sql} alt="sql" width={"80px"} />
                     </Tooltip>
                   </li>
-                  {/* <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
-                    <Tooltip text="Heroku" placement="bottom">
-                      <img src={heroku} alt="heroku" width={"80px"} />
-                    </Tooltip>
-                  </li> */}
-                  {/* <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
-                    <Tooltip text="Azure" placement="bottom">
-                      <img src={azure} alt="azure" width={"80px"} />
-                    </Tooltip>
-                  </li> */}
                 </ul>
               </div>
             </div>
@@ -242,21 +216,11 @@ const TechStack = ({ darkTheme }) => {
                       <img src={git} alt="git" width={"80px"} />
                     </Tooltip>
                   </li>
-                  {/* <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
-                    <Tooltip text="Visual Studio" placement="bottom">
-                      <img src={vs} alt="vs" width={"80px"} />
-                    </Tooltip>
-                  </li> */}
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Postman" placement="bottom">
                       <img src={postman} alt="postman" width={"80px"} />
                     </Tooltip>
                   </li>
-                  {/* <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
-                    <Tooltip text="Figma" placement="bottom">
-                      <img src={figma} alt="figma" width={"80px"} />
-                    </Tooltip>
-                  </li> */}
                 </ul>
               </div>
             </div>

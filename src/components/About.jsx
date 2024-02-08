@@ -1,5 +1,6 @@
 import React from "react";
 import resumeFile from "../documents/Lena_Kalmikov_CV.pdf";
+
 const AboutUs = ({ darkTheme }) => {
   return (
     <section
@@ -7,7 +8,6 @@ const AboutUs = ({ darkTheme }) => {
       className={"section " + (darkTheme ? "bg-dark-1 min-vh-100" : "")}
     >
       <div className={"container px-lg-5"}>
-        {/* Heading */}
         <div className="position-relative d-flex text-center mb-5">
           <h2
             className={
@@ -26,10 +26,21 @@ const AboutUs = ({ darkTheme }) => {
             <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto mt-5" />
           </p>
         </div>
-        {/* Heading end*/}
-        <div className="row gy-5">
-          {/* About me content start */}
-          <div className="col-lg-7 col-xl-8 ">
+        <div className="row gy-2 justify-content-center justify-content-lg-start">
+          <div className="col-lg-4 order-lg-2 ">
+            <div className="ps-lg-4 mt-lg-5 mb-3 text-center text-lg-start">
+              <span className="bg-dark-2 rounded-pill p-2 d-inline-block">
+                <img
+                  className="img-fluid rounded-pill d-block "
+                  src="images/profile.jpg"
+                  title="I'm Lena"
+                  alt="profile"
+                  width="220"
+                />
+              </span>
+            </div>
+          </div>
+          <div className="col-lg-8 order-lg-1 ">
             <h2
               className={
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
@@ -52,40 +63,14 @@ const AboutUs = ({ darkTheme }) => {
               have gained a lot of experience in working with clients from all
               over the world.
             </p>
+            <a
+              href={resumeFile}
+              download
+              className="btn btn-outline-primary rounded-pill mt-2 mb-2"
+            >
+              Download CV
+            </a>
           </div>
-          {/* About me content end */}
-          {/* about me personal detials start */}
-          <div className="col-lg-5 col-xl-4">
-            <div className="ps-lg-4">
-              <ul
-                className={
-                  "list-style-2 " +
-                  (darkTheme ? "list-style-light text-light" : "")
-                }
-              >
-                <li>
-                  <span className="fw-600 me-2">Name:</span>Lena Kalmikov
-                </li>
-                <li>
-                  <span className="fw-600 me-2">Email:</span>
-                  <a href="mailto:elenakalmikov@gmail.com">
-                    elenakalmikov@gmail.com
-                  </a>
-                </li>
-                <li className="border-0">
-                  <span className="fw-600 me-2">From:</span>Ramat-Gan, Israel
-                </li>
-              </ul>
-              <a
-                href={resumeFile}
-                download
-                className="btn btn-primary rounded-pill mt-2"
-              >
-                Download CV
-              </a>
-            </div>
-          </div>
-          {/* about me personal details end */}
         </div>
       </div>
     </section>

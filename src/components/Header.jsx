@@ -9,7 +9,7 @@ import githubOnHover from "../images/github_original.png";
 import linkedinOnHover from "../images/linkedin_original.png";
 import whatsappOnHover from "../images/whatsapp_original.png";
 
-const Header = ({ darkTheme, homeRef, handleNavClick }) => {
+const Header = ({ homeRef }) => {
   const [isNavModalClose, setIsNavModalClose] = useState(true);
 
   const [githubIcon, setGithubIcon] = useState(github);
@@ -18,10 +18,8 @@ const Header = ({ darkTheme, homeRef, handleNavClick }) => {
 
   return (
     <header id="header" className="sticky-top">
-      {/* Navbar */}
       <nav className="primary-menu navbar navbar-expand-lg navbar-dark bg-dark border-bottom-0">
         <div className="container-fluid position-relative h-100 flex-lg-column ps-3 px-lg-3 pt-lg-3 pb-lg-2">
-          {/* Logo */}
           <Link
             smooth
             duration={500}
@@ -33,19 +31,10 @@ const Header = ({ darkTheme, homeRef, handleNavClick }) => {
               setIsNavModalClose(true);
             }}
           >
-            <span className="bg-dark-2 rounded-pill p-2 mb-lg-1 d-none d-lg-inline-block">
-              <img
-                className="img-fluid rounded-pill d-block"
-                src="images/profile.jpg"
-                title="I'm Lena"
-                alt="profile"
-              />
-            </span>
-            <h1 className="text-5 text-white text-center mb-0 d-lg-block">
+            <h1 className="text-6 text-white text-center mb-0 mt-lg-3 d-lg-block">
               Lena Kalmikov
             </h1>
           </Link>
-          {/* Logo End */}
           <div
             id="header-nav"
             className={
@@ -58,7 +47,7 @@ const Header = ({ darkTheme, homeRef, handleNavClick }) => {
               <li className="nav-item">
                 <Link
                   target={homeRef}
-                  className="nav-link "
+                  className="nav-link text-4"
                   smooth
                   duration={500}
                   style={{ cursor: "pointer" }}
@@ -73,7 +62,7 @@ const Header = ({ darkTheme, homeRef, handleNavClick }) => {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item text-4">
                 <Link
                   className="nav-link "
                   smooth
@@ -90,7 +79,7 @@ const Header = ({ darkTheme, homeRef, handleNavClick }) => {
                   About Me
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item text-4">
                 <Link
                   className="nav-link "
                   smooth
@@ -107,7 +96,7 @@ const Header = ({ darkTheme, homeRef, handleNavClick }) => {
                   Tech Stack
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item text-4">
                 <Link
                   className="nav-link "
                   smooth
@@ -124,7 +113,7 @@ const Header = ({ darkTheme, homeRef, handleNavClick }) => {
                   Portfolio
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item text-4">
                 <Link
                   className="nav-link "
                   smooth
@@ -141,7 +130,7 @@ const Header = ({ darkTheme, homeRef, handleNavClick }) => {
                   Resume
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item text-4">
                 <Link
                   className="nav-link "
                   smooth
@@ -195,7 +184,7 @@ const Header = ({ darkTheme, homeRef, handleNavClick }) => {
                 </a>
               </Tooltip>
             </li>
-            <li className="social-icons-github">
+            <li className="social-icons-github mb-lg-3">
               <Tooltip text="Whatsapp" placement="bottom">
                 <a
                   href="https://wa.me/972527979366"
@@ -229,7 +218,6 @@ const Header = ({ darkTheme, homeRef, handleNavClick }) => {
           </button>
         </div>
       </nav>
-      {/* Navbar End */}
     </header>
   );
 };

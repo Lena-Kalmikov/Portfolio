@@ -1,15 +1,12 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-
 import { ToastContainer, toast } from "react-toastify";
-
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
 import whatsapp from "../images/whatsapp.png";
 import githubOnHover from "../images/github_original.png";
 import linkedinOnHover from "../images/linkedin_original.png";
 import whatsappOnHover from "../images/whatsapp_original.png";
-
 import "react-toastify/dist/ReactToastify.css";
 import { Tooltip } from "./Tooltip";
 
@@ -65,7 +62,6 @@ const Contact = ({ darkTheme }) => {
       className={"section " + (darkTheme ? "bg-dark-1 min-vh-100" : "bg-light")}
     >
       <div className={"container px-lg-5"}>
-        {/* Heading */}
         <div className="position-relative d-flex text-center mb-5">
           <h2
             className={
@@ -84,9 +80,7 @@ const Contact = ({ darkTheme }) => {
             <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto mt-5" />
           </p>
         </div>
-        {/* Heading end*/}
         <div className="row gy-5">
-          {/* contact details */}
           <div className="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
             <h2
               className={
@@ -98,17 +92,24 @@ const Contact = ({ darkTheme }) => {
             <p
               className={"text-3 mt-2 mb-1 " + (darkTheme ? "text-light" : "")}
             >
-              <span className="text-primary text-4 me-2">
+              <span className="text-primary text-5 me-2">
                 <i className="fas fa-phone" />
               </span>
               +972 52 797 9366
             </p>
+            <p className={"text-3 mb-1 " + (darkTheme ? "text-light" : "")}>
+              <span className="text-primary text-5 me-2">
+                <i className="fas fa-location-dot" />
+              </span>
+              Ramat-Gan, Israel
+            </p>
             <p className={"text-3 mb-4 " + (darkTheme ? "text-light" : "")}>
-              <span className="text-primary text-4 me-2">
+              <span className="text-primary text-5 me-2">
                 <i className="fas fa-envelope" />
               </span>
               elenakalmikov@gmail.com
             </p>
+
             <ul
               className={
                 "social-icons justify-content-center justify-content-md-start " +
@@ -168,8 +169,6 @@ const Contact = ({ darkTheme }) => {
               </div>
             </ul>
           </div>
-
-          {/* contact form */}
           <div className="col-md-8 col-xl-9 order-0 order-md-1">
             <h2
               className={
@@ -220,7 +219,7 @@ const Contact = ({ darkTheme }) => {
               <p className="text-center mt-4 mb-0">
                 <button
                   id="submit-btn"
-                  className="btn btn-primary rounded-pill d-inline-flex"
+                  className="btn btn-outline-primary rounded-pill d-inline-flex"
                   type="submit"
                 >
                   {sendingMail ? (

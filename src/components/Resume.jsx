@@ -42,7 +42,6 @@ const Resume = ({ darkTheme }) => {
       className={"section " + (darkTheme ? "bg-dark-2" : "")}
     >
       <div className={"container px-lg-5"}>
-        {/* Heading */}
         <div className="position-relative d-flex text-center mb-5">
           <h2
             className={
@@ -61,9 +60,7 @@ const Resume = ({ darkTheme }) => {
             <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto mt-5" />
           </p>
         </div>
-        {/* Heading end*/}
         <div className="row gx-5">
-          {/* My Education */}
           <div className="col-md-7">
             <h2
               className={
@@ -96,7 +93,6 @@ const Resume = ({ darkTheme }) => {
                 </div>
               ))}
           </div>
-          {/* My Experience */}
           <div className="col-md-5">
             <h2
               className={

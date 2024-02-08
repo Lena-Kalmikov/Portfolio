@@ -1,31 +1,11 @@
 import React from "react";
-// import Typewriter from "typewriter-effect";
 import videoBackground from "../videos/home.mp4";
-// import imageBackground from "../videos/home.gif";
 
 const Home = ({ handleNavClick }) => {
   return (
     <section id="home">
       <div className="hero-wrap">
         <div className="hero-mask opacity-7 bg-dark" />
-
-        {/* ---------------image background------------------ */}
-
-        {/* <div
-          className="hero-bg parallax image-bg"
-          // style={{
-          //   backgroundImage: 'url("images/home.gif")',
-          // }}
-        >
-          <img
-            src={imageBackground}
-            alt=""
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
-        </div> */}
-
-        {/* -------------------video background---------------------- */}
-
         <div
           className="player hero-bg parallax video-bg"
           style={{position: "fixed"}}
@@ -42,7 +22,6 @@ const Home = ({ handleNavClick }) => {
             backgroundColor="black"
           ></video>
         </div>
-
         <div className="hero-content section d-flex min-vh-100">
           <div className="container my-auto">
             <div className="row">
@@ -52,17 +31,6 @@ const Home = ({ handleNavClick }) => {
                   className="text-11 fw-600 text-white"
                   style={{ marginTop: "-20px" }}
                 >
-                  {/* <Typewriter
-                    options={{
-                      strings: [
-                        "I'm Lena Kalmikov.",
-                        "I'm a Full-Stack developer.",
-                        "I'm a Front-End developer.",
-                      ],
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  /> */}
                   I'm Lena Kalmikov, <br />a Full-Stack developer
                 </h2>
               </div>

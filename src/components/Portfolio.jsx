@@ -2,9 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Isotope from "isotope-layout";
 import ProjectDetailsModal from "./ProjectDetailsModal";
 const Portfolio = ({ darkTheme }) => {
-  // init one ref to store the future isotope object
   const isotope = useRef();
-  // store the filter keyword in a state
   const [filterKey, setFilterKey] = useState("*");
   const [imagesLoaded, setimagesLoaded] = useState(0);
   const [selectedProjectDetails, setSelectedProjectDetails] = useState();
@@ -109,20 +107,17 @@ const Portfolio = ({ darkTheme }) => {
     },
   ];
 
-  // initialize an Isotope object with configs
   useEffect(() => {
     isotope.current = new Isotope(".portfolio-filter", {
       itemSelector: ".filter-item",
       layoutMode: "masonry",
     });
 
-    // cleanup
     return () => {
       isotope.current.destroy();
     };
   }, []);
 
-  // handling filter key change
   useEffect(() => {
     if (imagesLoaded) {
       filterKey === "*"
@@ -140,7 +135,6 @@ const Portfolio = ({ darkTheme }) => {
         className={"section " + (darkTheme ? "bg-dark-1" : "bg-light")}
       >
         <div className={"container px-lg-5"}>
-          {/* Heading */}
           <div className="position-relative d-flex text-center">
             <h2
               className={
@@ -151,8 +145,6 @@ const Portfolio = ({ darkTheme }) => {
               Portfolio
             </h2>
           </div>
-          {/* Heading end*/}
-          {/* Filter Menu */}
           <ul
             className={
               "portfolio-menu nav nav-tabs justify-content-center border-bottom-0 mb-5 " +
@@ -181,7 +173,6 @@ const Portfolio = ({ darkTheme }) => {
               </li>
             ))}
           </ul>
-          {/* Filter Menu end */}
           <div className="portfolio popup-ajax-gallery">
             <div className="row portfolio-filter filter-container g-4">
               {projectsData.length > 0 &&
@@ -204,8 +195,7 @@ const Portfolio = ({ darkTheme }) => {
                           alt=""
                         />
                         <div className="portfolio-overlay">
-                          <a
-                            className="popup-ajax stretched-link"
+                          <a className="popup-ajax stretched-link"
                             href=""
                             onClick={() => {
                               setSelectedProjectDetails(projectsData[index]);
@@ -231,7 +221,6 @@ const Portfolio = ({ darkTheme }) => {
         </div>
       </section>
       <div className="project-details-modal">
-        {/* Modal */}
         <ProjectDetailsModal
           projectDetails={selectedProjectDetails}
           darkTheme={darkTheme}

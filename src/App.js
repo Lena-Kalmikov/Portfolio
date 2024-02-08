@@ -71,7 +71,6 @@ function App() {
             <Contact darkTheme={darkTheme}></Contact>
           </div>
         </div>
-        {/* back to top */}
         <Tooltip text="Back to Top" placement="left">
           <span
             id="back-to-top"
