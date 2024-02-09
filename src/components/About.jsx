@@ -50,18 +50,19 @@ const AboutUs = ({ darkTheme }) => {
               Full-Stack Developer
             </h2>
             <p className={darkTheme ? "text-4 text-white-50" : ""}>
-              I'm reliable and organized with a keen eye for detail. As a team
-              player, I have strong communication skills and am adept at working
-              under pressure. I see challenges as opportunities to solve
-              problems and am strongly motivated to achieve success in any task
-              at hand.
+              I'm reliable and organized with a keen eye for detail. I love
+              learning new things and am always on the lookout for ways to grow
+              and improve. Working with others comes naturally to me, thanks to
+              my strong communication skills and ability to keep calm under
+              pressure. I see challenges as opportunities to solve problems and
+              am strongly motivated to achieve success in any task at hand.
             </p>
             <p className={darkTheme ? "text-4 text-white-50" : ""}>
-              For the past 7 years, I've worked as a Project Manager in a global
-              company, acquiring a vast experience that will be an asset to any
-              team I'll be a part of. I've managed a variety of projects, and
-              have gained a lot of experience in working with clients from all
-              over the world.
+              For the past 7 years, I've been working as a Project Manager in a
+              global company, acquiring a vast experience that will be an asset
+              to any team I'll be a part of. I've managed a variety of projects,
+              and have gained a lot of experience in working with clients from
+              all over the world.
             </p>
             <a
               href={resumeFile}

@@ -48,7 +48,7 @@ const Portfolio = ({ darkTheme }) => {
     {
       title: "Book Catalogue Website ",
       projectInfo:
-        "On this site, people can browse books, search by genre and add comments on a book's page. Admins can preform CRUD operations - create, review, update and delete books.",
+        "On this site, people can browse books, search by genre, and add comments on a book's page. Admins can perform CRUD operations - create, review, update, and delete books.",
       technologies: "C#, ASP.Net Core, JavaScript, HTML, CSS, Bootstrap, MSSQL",
       github: {
         name: "Bookstore Catalogue Website",
@@ -81,7 +81,7 @@ const Portfolio = ({ darkTheme }) => {
     {
       title: "Chat And Play",
       projectInfo:
-        "The goal of this project was to create a real-time chat app with an option to play an online game with another person. People can register/login, choose another player from an online list which updates in realtime, enter a chat room with them and there they can chat and play.",
+        "This project aimed to create a real-time chat app with an option to play an online game with another person. People can register/login, choose another player from an online list that updates in real-time, and enter a chat room with them where they can chat and play.",
       technologies:
         "ReactJS, CSS, HTML, NodeJS, ExpressJS, Socket.IO and Azure cloud.",
       github: {
@@ -195,7 +195,8 @@ const Portfolio = ({ darkTheme }) => {
                           alt=""
                         />
                         <div className="portfolio-overlay">
-                          <a className="popup-ajax stretched-link"
+                          <a
+                            className="popup-ajax stretched-link"
                             href=""
                             onClick={() => {
                               setSelectedProjectDetails(projectsData[index]);

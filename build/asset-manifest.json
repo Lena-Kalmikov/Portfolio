@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.39daa66d.css",
-    "main.js": "/static/js/main.d7206418.js",
+    "main.js": "/static/js/main.c3f0797c.js",
     "static/js/787.8c76a088.chunk.js": "/static/js/787.8c76a088.chunk.js",
     "static/media/home.mp4": "/static/media/home.8bd639181fbed3663396.mp4",
     "static/media/Lena_Kalmikov_CV.pdf": "/static/media/Lena_Kalmikov_CV.6e98956e9d996e7807dd.pdf",
@@ -36,11 +36,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.39daa66d.css.map": "/static/css/main.39daa66d.css.map",
-    "main.d7206418.js.map": "/static/js/main.d7206418.js.map",
+    "main.c3f0797c.js.map": "/static/js/main.c3f0797c.js.map",
     "787.8c76a088.chunk.js.map": "/static/js/787.8c76a088.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.39daa66d.css",
-    "static/js/main.d7206418.js"
+    "static/js/main.c3f0797c.js"
   ]
 }
