@@ -87,13 +87,13 @@ const Header = ({ homeRef }) => {
                   style={{ cursor: "pointer" }}
                   activeClass="active"
                   spy
-                  to="techStack"
+                  to="portfolio"
                   onClick={(e) => {
                     e.preventDefault();
                     setIsNavModalClose(true);
                   }}
                 >
-                  Tech Stack
+                  Portfolio
                 </Link>
               </li>
               <li className="nav-item text-4">
@@ -104,13 +104,13 @@ const Header = ({ homeRef }) => {
                   style={{ cursor: "pointer" }}
                   activeClass="active"
                   spy
-                  to="portfolio"
+                  to="techStack"
                   onClick={(e) => {
                     e.preventDefault();
                     setIsNavModalClose(true);
                   }}
                 >
-                  Portfolio
+                  Tech Stack
                 </Link>
               </li>
               <li className="nav-item text-4">

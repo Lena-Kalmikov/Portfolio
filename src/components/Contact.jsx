@@ -95,7 +95,7 @@ const Contact = ({ darkTheme }) => {
               <span className="text-primary text-5 me-2">
                 <i className="fas fa-phone" />
               </span>
-              +972 52 797 9366
+              052-7979366
             </p>
             <p className={"text-3 mb-1 " + (darkTheme ? "text-light" : "")}>
               <span className="text-primary text-5 me-2">

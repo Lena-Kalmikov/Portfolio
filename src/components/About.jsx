@@ -47,7 +47,7 @@ const AboutUs = ({ darkTheme }) => {
               }
             >
               I'm <span className="text-primary">Lena Kalmikov,</span> a
-              Full-Stack Developer
+              Front-End Developer
             </h2>
             <p className={darkTheme ? "text-4 text-white-50" : ""}>
               I'm reliable and organized with a keen eye for detail. I love

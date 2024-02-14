@@ -79,11 +79,6 @@ const TechStack = ({ darkTheme }) => {
                       <img src={reactrouter} alt="reactrouter" width={"80px"} />
                     </Tooltip>
                   </li>
-                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
-                    <Tooltip text="Redux" placement="bottom">
-                      <img src={redux} alt="redux" width={"80px"} />
-                    </Tooltip>
-                  </li>
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
                     <Tooltip text="HTML" placement="bottom">
                       <img src={html5} alt="html5" width={"80px"} />
@@ -112,6 +107,11 @@ const TechStack = ({ darkTheme }) => {
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Type Script" placement="bottom">
                       <img src={ts} alt="type script" width={"80px"} />
+                    </Tooltip>
+                  </li>
+                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                    <Tooltip text="Redux" placement="bottom">
+                      <img src={redux} alt="redux" width={"80px"} />
                     </Tooltip>
                   </li>
                 </ul>

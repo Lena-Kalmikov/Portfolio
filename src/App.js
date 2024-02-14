@@ -65,8 +65,8 @@ function App() {
           <div id="content" role="main">
             <Home darkTheme={darkTheme} handleNavClick={handleNavClick}></Home>
             <AboutUs darkTheme={darkTheme}></AboutUs>
-            <TechStack darkTheme={darkTheme}></TechStack>
             <Portfolio darkTheme={darkTheme}></Portfolio>
+            <TechStack darkTheme={darkTheme}></TechStack>
             <Resume darkTheme={darkTheme}></Resume>
             <Contact darkTheme={darkTheme}></Contact>
           </div>

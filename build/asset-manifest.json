@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.39daa66d.css",
-    "main.js": "/static/js/main.c3f0797c.js",
+    "main.css": "/static/css/main.b434bb42.css",
+    "main.js": "/static/js/main.e123445e.js",
     "static/js/787.8c76a088.chunk.js": "/static/js/787.8c76a088.chunk.js",
     "static/media/home.mp4": "/static/media/home.8bd639181fbed3663396.mp4",
-    "static/media/Lena_Kalmikov_CV.pdf": "/static/media/Lena_Kalmikov_CV.6e98956e9d996e7807dd.pdf",
+    "static/media/Lena_Kalmikov_CV.pdf": "/static/media/Lena_Kalmikov_CV.ce1f252a8a015c9db8c0.pdf",
     "static/media/whatsapp_original.png": "/static/media/whatsapp_original.d026940870fb334920b7.png",
     "static/media/sql.png": "/static/media/sql.70cce0df4c9d53d493ac.png",
     "static/media/github_original.png": "/static/media/github_original.ee5315a059cab8da6081.png",
@@ -35,12 +35,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.39daa66d.css.map": "/static/css/main.39daa66d.css.map",
-    "main.c3f0797c.js.map": "/static/js/main.c3f0797c.js.map",
+    "main.b434bb42.css.map": "/static/css/main.b434bb42.css.map",
+    "main.e123445e.js.map": "/static/js/main.e123445e.js.map",
     "787.8c76a088.chunk.js.map": "/static/js/787.8c76a088.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39daa66d.css",
-    "static/js/main.c3f0797c.js"
+    "static/css/main.b434bb42.css",
+    "static/js/main.e123445e.js"
   ]
 }

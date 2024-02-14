@@ -82,7 +82,7 @@ select.form-control:not([size]):not([multiple]):not(.form-control-sm) {
 	background:#232a31;
 	color: #fff;
   }
-  .form-control:focus{border-color: #80bdff!important;}
+  .form-control:focus{border-color: #ae84fa!important;}
   .form-control {
 	&::-webkit-input-placeholder {
 	  color: #777b7f;
@@ -420,7 +420,7 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
         background: #795548;
       }
       &.purple {
-        background: #6f42c1;
+        background: #ae84fa;
       }
       &.indigo {
         background: #6610f2;

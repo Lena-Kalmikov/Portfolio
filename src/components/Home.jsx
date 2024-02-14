@@ -31,7 +31,7 @@ const Home = ({ handleNavClick }) => {
                   className="text-11 fw-600 text-white"
                   style={{ marginTop: "-20px" }}
                 >
-                  I'm Lena Kalmikov, <br />a Full-Stack developer
+                  I'm Lena Kalmikov, <br />a Front-End developer
                 </h2>
               </div>
             </div>
