@@ -109,11 +109,6 @@ const TechStack = ({ darkTheme }) => {
                       <img src={ts} alt="type script" width={"80px"} />
                     </Tooltip>
                   </li>
-                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
-                    <Tooltip text="Redux" placement="bottom">
-                      <img src={redux} alt="redux" width={"80px"} />
-                    </Tooltip>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -148,11 +143,6 @@ const TechStack = ({ darkTheme }) => {
                       <img src={csharp} alt="c-sharp" width={"80px"} />
                     </Tooltip>
                   </li>
-                  <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
-                    <Tooltip text=".NET" placement="bottom">
-                      <img src={net} alt=".net" width={"80px"} />
-                    </Tooltip>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -184,7 +174,7 @@ const TechStack = ({ darkTheme }) => {
                     </Tooltip>
                   </li>
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
-                    <Tooltip text="SQL" placement="bottom">
+                    <Tooltip text="MSSQL" placement="bottom">
                       <img src={sql} alt="sql" width={"80px"} />
                     </Tooltip>
                   </li>

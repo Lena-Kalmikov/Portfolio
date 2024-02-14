@@ -1,5 +1,3 @@
-//---------- @mixins ----------//
-
 @mixin box-shadow($val...) {
 	-webkit-box-shadow: ($val);
 	box-shadow: ($val);

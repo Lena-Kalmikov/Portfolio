@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b434bb42.css",
-    "main.js": "/static/js/main.e123445e.js",
+    "main.css": "/static/css/main.c08ca040.css",
+    "main.js": "/static/js/main.636c7b15.js",
     "static/js/787.8c76a088.chunk.js": "/static/js/787.8c76a088.chunk.js",
     "static/media/home.mp4": "/static/media/home.8bd639181fbed3663396.mp4",
     "static/media/Lena_Kalmikov_CV.pdf": "/static/media/Lena_Kalmikov_CV.ce1f252a8a015c9db8c0.pdf",
@@ -35,12 +35,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.b434bb42.css.map": "/static/css/main.b434bb42.css.map",
-    "main.e123445e.js.map": "/static/js/main.e123445e.js.map",
+    "main.c08ca040.css.map": "/static/css/main.c08ca040.css.map",
+    "main.636c7b15.js.map": "/static/js/main.636c7b15.js.map",
     "787.8c76a088.chunk.js.map": "/static/js/787.8c76a088.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b434bb42.css",
-    "static/js/main.e123445e.js"
+    "static/css/main.c08ca040.css",
+    "static/js/main.636c7b15.js"
   ]
 }
