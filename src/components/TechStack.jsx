@@ -4,7 +4,6 @@ import { Tooltip } from "./Tooltip";
 import js from "../images/techStack/js.png";
 import reactjs from "../images/techStack/reactjs.png";
 import reactrouter from "../images/techStack/react-router.png";
-import redux from "../images/techStack/redux.png";
 import css from "../images/techStack/css.png";
 import html5 from "../images/techStack/html5.png";
 import sass from "../images/techStack/sass.png";
@@ -20,7 +19,7 @@ import csharp from "../images/techStack/csharp.png";
 import ts from "../images/techStack/typescript.png";
 import postman from "../images/techStack/postman.png";
 import express from "../images/techStack/express.png";
-import net from "../images/techStack/net.png";
+import jest from "../images/techStack/jest.png";
 
 const TechStack = ({ darkTheme }) => {
   return (
@@ -74,7 +73,7 @@ const TechStack = ({ darkTheme }) => {
                       <img src={reactjs} alt="reactjs" width={"80px"} />
                     </Tooltip>
                   </li>
-                  <li style={{ marginRight: "-1rem", marginBottom: "-1rem" }}>
+                  <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
                     <Tooltip text="React Router" placement="bottom">
                       <img src={reactrouter} alt="reactrouter" width={"80px"} />
                     </Tooltip>
@@ -96,12 +95,17 @@ const TechStack = ({ darkTheme }) => {
                   </li>
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Bootstrap" placement="bottom">
-                      <img src={bootstrap5} alt="bootstrap5" width={"80px"} />
+                      <img src={bootstrap5} alt="bootstrap" width={"80px"} />
                     </Tooltip>
                   </li>
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Sass" placement="bottom">
-                      <img src={sass} alt="sass" width={"80px"} />
+                      <img src={sass} alt="sass" width={"80px"}/>
+                    </Tooltip>
+                  </li>
+                  <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
+                    <Tooltip text="Jest" placement="bottom">
+                      <img src={jest} alt="jest" width={"80px"} />
                     </Tooltip>
                   </li>
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>

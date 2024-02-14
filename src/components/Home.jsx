@@ -1,5 +1,4 @@
 import React from "react";
-import videoBackground from "../videos/home.mp4";
 
 const Home = ({ handleNavClick }) => {
   return (
@@ -8,10 +7,10 @@ const Home = ({ handleNavClick }) => {
         <div className="hero-mask opacity-7 bg-dark" />
         <div
           className="player hero-bg parallax video-bg"
-          style={{position: "fixed"}}
+          style={{ position: "fixed" }}
         >
           <video
-            src={videoBackground}
+            src="https://firebasestorage.googleapis.com/v0/b/lena-kalmikov-portfolio.appspot.com/o/home.mp4?alt=media&token=8e5b16e7-771d-419c-b714-0f7cd6fafbcd"
             playsInline
             autoPlay
             muted
