@@ -82,7 +82,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                         ))}
                     </Slider>
                   </div>
-                  <div className="col-md-5">
+                  <div className="col-md-6">
                     <h4
                       className={
                         "text-4 font-weight-600" +
@@ -142,6 +142,12 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                           >
                             {projectDetails?.url?.name}
                           </a>
+                          <p className="mt-3">
+                            You can explore the app with these credentials:{" "}
+                            <br /> email: <b>{projectDetails?.url?.username}</b>{" "}
+                            <br /> password:{" "}
+                            <b>{projectDetails?.url?.password}</b>
+                          </p>
                         </li>
                       ) : (
                         ""

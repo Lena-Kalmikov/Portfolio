@@ -18,10 +18,12 @@ const Portfolio = ({ darkTheme }) => {
       projectInfo:
         "As someone who loves board games and organizing events but couldn't find the right platform, my favorite project became creating such a platform myself. PlayDate is a board games website where people can browse board games and events. Registering to the website allows users to create their own events and delete them, add, edit and delete comments, join existing events, browse event participants, search games, switch modes from dark to light and much more.",
       technologies:
-        "ReactJS, CSS, Material UI, react-router-dom, react-hook-form, Firestore Database, Firebase for Authentication, Storage, and Hosting",
+        "React, JavaScript, CSS, Material UI, Jest, Firestore Database, Firebase for Authentication, Storage, and Hosting. I also used some noteworthy react libraries: react-router-dom, react-hook-form, react-google-maps/api, react-geocode.",
       url: {
         name: "PlayDate",
         link: "https://play-date-board-games-website.web.app/",
+        username: "test@gmail.com",
+        password: "123456",
       },
       github: {
         name: "Board Games Website",
