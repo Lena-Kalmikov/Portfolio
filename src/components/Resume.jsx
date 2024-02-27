@@ -1,5 +1,5 @@
 import React from "react";
-import resumeFile from "../documents/Lena_Kalmikov_CV.pdf";
+import resumeFile from "../documents/Lena_Kalmikov_Frontend_Developer_CV.pdf";
 
 const Resume = ({ darkTheme }) => {
   const educationDetails = [

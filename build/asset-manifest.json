@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.c08ca040.css",
-    "main.js": "/static/js/main.26fe471d.js",
+    "main.js": "/static/js/main.445d6a3d.js",
     "static/js/787.8c76a088.chunk.js": "/static/js/787.8c76a088.chunk.js",
-    "static/media/Lena_Kalmikov_CV.pdf": "/static/media/Lena_Kalmikov_CV.bac87654c977b4dafcbf.pdf",
+    "static/media/Lena_Kalmikov_Frontend_Developer_CV.pdf": "/static/media/Lena_Kalmikov_Frontend_Developer_CV.1c21ef4ae70376ce4794.pdf",
     "static/media/whatsapp_original.png": "/static/media/whatsapp_original.d026940870fb334920b7.png",
     "static/media/sql.png": "/static/media/sql.70cce0df4c9d53d493ac.png",
     "static/media/github_original.png": "/static/media/github_original.ee5315a059cab8da6081.png",
@@ -34,11 +34,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.c08ca040.css.map": "/static/css/main.c08ca040.css.map",
-    "main.26fe471d.js.map": "/static/js/main.26fe471d.js.map",
+    "main.445d6a3d.js.map": "/static/js/main.445d6a3d.js.map",
     "787.8c76a088.chunk.js.map": "/static/js/787.8c76a088.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c08ca040.css",
-    "static/js/main.26fe471d.js"
+    "static/js/main.445d6a3d.js"
   ]
 }
