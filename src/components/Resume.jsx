@@ -4,7 +4,7 @@ import resumeFile from "../documents/Lena_Kalmikov_Frontend_Developer_CV.pdf";
 const Resume = ({ darkTheme }) => {
   const educationDetails = [
     {
-      yearRange: "2021 - 2022",
+      yearRange: "2022 - 2023",
       title: "Full-Stack Development Bootcamp",
       place: "Sela College",
       desc: "A year long program that covered essential concepts such as Object-Oriented Programming, Data Structures, Algorithms, Complexity, and Design Patterns. This was practiced using various programming languages (c#, js), frameworks (.net framework, asp.net core, angular), and databases (mssql, sqlite).",
