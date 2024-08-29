@@ -10,6 +10,12 @@ const Resume = ({ darkTheme }) => {
       desc: "A year long program that covered essential concepts such as Object-Oriented Programming, Data Structures, Algorithms, Complexity, and Design Patterns. This was practiced using various programming languages (c#, js), frameworks (.net framework, asp.net core, angular), and databases (mssql, sqlite).",
     },
     {
+      yearRange: "2024",
+      title: "Data Structures and Algorithms using JavaScript",
+      place: "Udemy",
+      desc: "Teaches how to implement data structures and algorithms from scratch, and how to analyze their performance.",
+    },
+    {
       yearRange: "2023",
       title:
         "React - The Complete Guide (including Hooks, React Router, Redux)",

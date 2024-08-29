@@ -3,7 +3,7 @@ import { Tooltip } from "./Tooltip";
 
 import js from "../images/techStack/js.png";
 import reactjs from "../images/techStack/reactjs.png";
-import reactrouter from "../images/techStack/react-router.png";
+import tailwind from "../images/techStack/tailwind.png";
 import css from "../images/techStack/css.png";
 import html5 from "../images/techStack/html5.png";
 import sass from "../images/techStack/sass.png";
@@ -20,6 +20,7 @@ import ts from "../images/techStack/typescript.png";
 import postman from "../images/techStack/postman.png";
 import express from "../images/techStack/express.png";
 import jest from "../images/techStack/jest.png";
+import figma from "../images/techStack/figma.png";
 
 const TechStack = ({ darkTheme }) => {
   return (
@@ -64,18 +65,13 @@ const TechStack = ({ darkTheme }) => {
                   }
                 >
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
-                    <Tooltip text="Java Script" placement="bottom">
+                    <Tooltip text="JavaScript" placement="bottom">
                       <img src={js} alt="java script" width={"80px"} />
                     </Tooltip>
                   </li>
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
                     <Tooltip text="React" placement="bottom">
                       <img src={reactjs} alt="reactjs" width={"80px"} />
-                    </Tooltip>
-                  </li>
-                  <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
-                    <Tooltip text="React Router" placement="bottom">
-                      <img src={reactrouter} alt="reactrouter" width={"80px"} />
                     </Tooltip>
                   </li>
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
@@ -94,13 +90,18 @@ const TechStack = ({ darkTheme }) => {
                     </Tooltip>
                   </li>
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
+                    <Tooltip text="Tailwind" placement="bottom">
+                      <img src={tailwind} alt="tailwind" width={"80px"} />
+                    </Tooltip>
+                  </li>
+                  <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Bootstrap" placement="bottom">
                       <img src={bootstrap5} alt="bootstrap" width={"80px"} />
                     </Tooltip>
                   </li>
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Sass" placement="bottom">
-                      <img src={sass} alt="sass" width={"80px"}/>
+                      <img src={sass} alt="sass" width={"80px"} />
                     </Tooltip>
                   </li>
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
@@ -109,7 +110,7 @@ const TechStack = ({ darkTheme }) => {
                     </Tooltip>
                   </li>
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
-                    <Tooltip text="Type Script" placement="bottom">
+                    <Tooltip text="TypeScript" placement="bottom">
                       <img src={ts} alt="type script" width={"80px"} />
                     </Tooltip>
                   </li>
@@ -208,6 +209,11 @@ const TechStack = ({ darkTheme }) => {
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
                     <Tooltip text="Git" placement="bottom">
                       <img src={git} alt="git" width={"80px"} />
+                    </Tooltip>
+                  </li>
+                  <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>
+                    <Tooltip text="Figma" placement="bottom">
+                      <img src={figma} alt="figma" width={"80px"} />
                     </Tooltip>
                   </li>
                   <li style={{ marginRight: "-0.7rem", marginBottom: "-1rem" }}>

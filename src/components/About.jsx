@@ -50,19 +50,24 @@ const AboutUs = ({ darkTheme }) => {
               Frontend Developer
             </h2>
             <p className={darkTheme ? "text-4 text-white-50" : ""}>
-              I'm reliable and organized with a keen eye for detail. I love
-              learning new things and am always on the lookout for ways to grow
-              and improve. Working with others comes naturally to me, thanks to
-              my strong communication skills and ability to keep calm under
-              pressure. I see challenges as opportunities to solve problems and
-              am strongly motivated to achieve success in any task at hand.
+              <span className="text-primary">👩🏻‍💻</span> I'm passionate about
+              turning ideas into visually appealing, interactive and
+              user-friendly websites. There's magic in turning a blank page into
+              a beautiful and functional website that can help people.
             </p>
             <p className={darkTheme ? "text-4 text-white-50" : ""}>
-              For the past 7 years, I've been working as a Project Manager in a
-              global company, acquiring a vast experience that will be an asset
-              to any team I'll be a part of. I've managed a variety of projects,
-              and have gained a lot of experience in working with clients from
-              all over the world.
+              <span className="text-primary">🌍</span> For the past 8 years,
+              I've been working as a Project Manager in a global company,
+              acquiring a vast experience that will be an asset to any team I'll
+              be a part of. I've managed a variety of projects, and collaborated
+              with clients and colleagues around the globe. I understand the
+              importance of effective communication and teamwork. I thrive in
+              dynamic and fast-paced environments.
+            </p>
+            <p className={darkTheme ? "text-4 text-white-50" : ""}>
+              <span className="text-primary">📚</span> In my free time I like
+              playing board games, reading fantasy books, hiking, and serving my
+              3 feline overlords to the best of meow ability.
             </p>
             <a
               href={resumeFile}
