@@ -101,7 +101,7 @@ const Contact = ({ darkTheme }) => {
               <span className="text-primary text-5 me-2">
                 <i className="fas fa-location-dot" />
               </span>
-              Ramat-Gan, Israel
+              Kiryat-Ono, Israel
             </p>
             <p className={"text-3 mb-4 " + (darkTheme ? "text-light" : "")}>
               <span className="text-primary text-5 me-2">
@@ -187,7 +187,7 @@ const Contact = ({ darkTheme }) => {
               onSubmit={sendEmail}
             >
               <div className="row g-4">
-                <div className="col-xl-6">
+                <div className="col-xl-5">
                   <input
                     name="user_name"
                     type="text"
@@ -196,7 +196,7 @@ const Contact = ({ darkTheme }) => {
                     placeholder="Name"
                   />
                 </div>
-                <div className="col-xl-6">
+                <div className="col-xl-7">
                   <input
                     name="user_email"
                     type="email"

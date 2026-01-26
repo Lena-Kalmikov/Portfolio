@@ -1,7 +1,7 @@
 import React from "react";
-import resumeFile from "../documents/Lena_Kalmikov_Frontend_Developer_CV.pdf";
 
 const Resume = ({ darkTheme }) => {
+  const resumeFile = "/documents/Lena_Kalmikov_Project_Manager_CV.pdf";
   const educationDetails = [
     {
       yearRange: "2022 - 2023",
@@ -169,7 +169,7 @@ const Resume = ({ darkTheme }) => {
           <a
             className="btn btn-outline-secondary rounded-pill shadow-none"
             href={resumeFile}
-            download
+            download="Lena_Kalmikov_Project_Manager_CV.pdf"
           >
             Download CV
             <span className="ms-1">

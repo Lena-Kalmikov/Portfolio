@@ -1,7 +1,7 @@
 import React from "react";
-import resumeFile from "../documents/Lena_Kalmikov_Frontend_Developer_CV.pdf";
 
 const AboutUs = ({ darkTheme }) => {
+  const resumeFile = "/documents/Lena_Kalmikov_Project_Manager_CV.pdf";
   return (
     <section
       id="about"
@@ -46,32 +46,34 @@ const AboutUs = ({ darkTheme }) => {
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
               }
             >
-              I'm <span className="text-primary">Lena Kalmikov,</span> a
-              Frontend Developer
+              I'm <span className="text-primary">Lena Kalmikov,</span> a Project
+              Manager
             </h2>
             <p className={darkTheme ? "text-4 text-white-50" : ""}>
-              <span className="text-primary">👩🏻‍💻</span> I'm passionate about
-              turning ideas into visually appealing, interactive and
-              user-friendly websites. There's magic in turning a blank page into
-              a beautiful and functional website that can help people.
+              <span className="text-primary">🌍</span> I’m a Project Manager
+              with 9 years of experience leading end-to-end projects in a global
+              B2B localization company. I’ve owned full project lifecycles,
+              including scheduling, capacity planning, budget oversight, risk
+              management, issue resolution, cross-functional coordination, and
+              clear client communication.
             </p>
             <p className={darkTheme ? "text-4 text-white-50" : ""}>
-              <span className="text-primary">🌍</span> For the past 8 years,
-              I've been working as a Project Manager in a global company,
-              acquiring a vast experience that will be an asset to any team I'll
-              be a part of. I've managed a variety of projects, and collaborated
-              with clients and colleagues around the globe. I understand the
-              importance of effective communication and teamwork. I thrive in
-              dynamic and fast-paced environments.
+              <span className="text-primary">👩🏻‍💻</span> I've completed a
+              full-stack development bootcamp, which gave me a solid technical
+              foundation to understand how features are built, manage
+              dependencies and trade-offs, and collaborate effectively with
+              engineering teams. I bring hands-on ownership, strong execution,
+              and the ability to keep teams aligned in fast-changing
+              environments.
             </p>
             <p className={darkTheme ? "text-4 text-white-50" : ""}>
               <span className="text-primary">📚</span> In my free time I like
               playing board games, reading fantasy books, hiking, and serving my
-              3 feline overlords to the best of meow ability.
+              feline overlords to the best of meow ability.
             </p>
             <a
               href={resumeFile}
-              download
+              download="Lena_Kalmikov_Project_Manager_CV.pdf"
               className="btn btn-outline-primary rounded-pill mt-2 mb-2"
             >
               Download CV
